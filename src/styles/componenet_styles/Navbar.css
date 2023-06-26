@@ -78,7 +78,7 @@
   }
   
   .radio-2:checked ~ .glider {
-    width: 65px;
+    width: 64px;
     transform: translateX(75%);
   }
   
