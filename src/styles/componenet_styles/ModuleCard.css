@@ -1,0 +1,48 @@
+.card {
+    width: 350px;
+    position: relative;
+    height: 500px;
+    background: linear-gradient(145deg, #2B86C5 0%, #FF3CAC 100%);
+    border-radius: 30px;
+    box-shadow: 10px 10px 9px #c5c5c5,
+                -10px -10px 9px #ffffff;
+    transition: box-shadow 0.7s ease;
+   }
+
+.lesson-num {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items:center;
+    font-size: x-small;
+    width: 25%;
+    top: 5%;
+    left: 5%;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #E3F2FD;
+    font-weight: bold;
+}
+
+.card h1 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.card p {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    right: 5%;
+    background-color: #E3F2FD;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.duration{
+    font-size: small;
+    position: absolute;
+    top: 31%;
+    left: 5%;
+}
