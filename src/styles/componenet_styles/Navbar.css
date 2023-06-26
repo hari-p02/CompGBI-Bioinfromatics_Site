@@ -11,6 +11,7 @@
   
   .tabs * {
     z-index: 2;
+    transition: color 0.15s ease-in, transform 0.25s ease-out;
   }
   
   .container input[type="radio"] {
@@ -23,7 +24,7 @@
     align-items: center;
     justify-content: center;
     height: 30px;
-    width: 80px; /* Adjust the width as per your desired spacing */
+    width: 80px;
     font-size: 0.8rem;
     color: black;
     font-weight: 500;
@@ -32,59 +33,37 @@
     transition: color 0.15s ease-in;
   }
   
-  
-  .container input[type="radio"]:checked + label {
+ .link-1:hover{
+    width: 70px;
+    height: 30px;
+    background-color: #e6eef9;
+    z-index: 1;
+    border-radius: 99px;
+    transition: 0.25s ease-out;
     color: #185ee0;
   }
   
-  /* .glider {
-    position: absolute;
-    display: flex;
+  .link-2:hover {
+    width: 100px;
     height: 30px;
-    width: 52px;
     background-color: #e6eef9;
     z-index: 1;
     border-radius: 99px;
     transition: 0.25s ease-out;
+    color: #185ee0;
   }
   
-  .container input[id="radio-1"]:checked ~ .glider {
-    transform: translateX(0);
+  .link-3:hover {
+    width: 70px;
+    height: 30px;
+    background-color: #e6eef9;
+    z-index: 1;
+    border-radius: 99px;
+    transition: 0.25s ease-out;
+    color: #185ee0;
   }
   
-  .container input[id="radio-2"]:checked ~ .glider {
-   
-    transform: translateX(100%); 
+  a {
+    text-decoration: none;
   }
-  
-  .container input[id="radio-3"]:checked ~ .glider {
-    transform: translateX(210%); 
-  } */
 
-  
-.glider {
-    position: absolute;
-    display: flex;
-    height: 30px;
-    background-color: #e6eef9;
-    z-index: 1;
-    border-radius: 99px;
-    transition: 0.25s ease-out;
-  }
-  
-  .radio-1:checked ~ .glider {
-    width: 52px;
-    transform: translateX(0%);
-  }
-  
-  .radio-2:checked ~ .glider {
-    width: 64px;
-    transform: translateX(75%);
-  }
-  
-  .radio-3:checked ~ .glider {
-    width: 50px;
-    transform: translateX(217%);
-  }
-  
-  
