@@ -35,9 +35,26 @@ const Mod1 = () => {
             Introduction to Python
           </div>
         </div>
-      </div>
-      <div className='video-player'>
-        <iframe src="https://www.youtube.com/embed/DKh7C-TeokU" title="placeholder" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen id="video"></iframe>
+        <div className='video-player'>
+            <iframe
+            src="https://www.youtube.com/embed/DKh7C-TeokU"
+            title="placeholder"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            id="video"
+            style={{ borderRadius: '30px', border: 'none', width: '100%', height: '100%' }}
+            ></iframe>
+            <div className='players'>
+                <div class="info">
+                    <div className='num'>1</div>
+                    <img src="https://i.ytimg.com/vi/DKh7C-TeokU/hqdefault.jpg" alt="Video Thumbnail" />
+                    <div>
+                        <div className='title'>Installing Python</div>
+                        <div className='account'>CompGBI Lab</div>
+                    </div>
+                </div>
+            </div>
+        </div>
       </div>
     </div>
   );
