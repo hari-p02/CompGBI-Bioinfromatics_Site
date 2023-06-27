@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import "../styles/componenet_styles/ModuleCard.css"
-const ModuleCard = ( {moduleNum, title, duration, highlight, bgkfrom, bkgto, desc}) => {
+const ModuleCard = ( {moduleNum, title, duration, highlight, bgkfrom, bkgto, topg, desc}) => {
 const parts = desc.split(/(<span>|<\/span>)/);
 // console.log("linear-gradient(135deg," + bgkfrom + " 0%, " + bkgto + " 100%)");
   return (
@@ -8,10 +9,12 @@ const parts = desc.split(/(<span>|<\/span>)/);
         <div className='top-content'>
             <div className='cont'>
                 <div className='lesson-num'> {"Module " + moduleNum}</div>
-                <div class="box">
-                    <div class="arrow right"></div>
-                    <div class="text">Go To Module!</div>
-                </div>
+                <Link to={topg}>
+                    <div class="box">
+                        <div class="arrow right"></div>
+                        <div class="text">Go To Module!</div>
+                    </div>
+                </Link>
             </div>
             <h1>{title}</h1>
             <div className='duration'>{"Duration: " +  duration + " mins"}</div>
