@@ -5,6 +5,7 @@
     background: #fff;
     overflow: hidden;
     display: flex;
+    /* justify-content: space-around; */
     border-radius: 30px;
     padding: 10px;
     box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
@@ -18,7 +19,7 @@
   }
   
   .circles {
-    width: 20%;
+    width: 10%;
     gap: 8px;
     padding: 10px;
   }
@@ -51,6 +52,10 @@
   
   .chevrons {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    height: 100%;
   }
   
   .search-bar {
@@ -75,7 +80,7 @@
 
   .video-player {
     position: absolute;
-    top: 35%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -84,7 +89,7 @@
     font-weight: bold;
     /* border: 3px solid #73AD21; */
     width: 72vw;
-    height: 35vh;
+    /* height: 35vh; */
     display: flex;
     justify-content: space-around;
   }
@@ -93,13 +98,25 @@
     margin-left: 20px;
   }
 
+  .players {
+    overflow: scroll;
+    width: 50vw;
+    height: 65vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* border: 3px solid #73AD21; */
+  }
+
   
   .mod1 {
     display: flex;
     justify-content: center;
     align-items: center;
     /* height: 75vh; */
-    border: 3px solid #73AD21;
+    /* border: 3px solid #73AD21; */
     /* flex-direction: column; */
     margin-top: 50px;
   }
@@ -118,29 +135,20 @@
     /* border: 3px solid #73AD21; */
   }
 
+  .info:hover {
+    box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
   .info img {
     width: 25%;
-    border-radius: 15px;
-    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    margin: 5px 10px 5px 10px;
     /* border: 3px solid #73AD21; */
   }
 
   
-  .info__icon path {
-    fill: #fff;
-  }
-  
-  .info__title {
-    font-weight: 500;
-    font-size: 14px;
-    color: #fff;
-  }
-  
-
-  
-  .info__close path {
-    fill: #fff;
-  }
 
   .account {
     font-weight: 100;
@@ -157,4 +165,40 @@
   .title {
     font-weight: 500;
     font-size: medium;
+  }
+
+  .collab a {
+    color: blue;
+  }
+
+  .collab {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  .next-module div, .prev-module div {
+    display: none;
+  }
+
+  .next-module:hover, .prev-module:hover  {
+    width: 100px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #26d526, yellow);
+    animation: anima 0.6s ease;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .next-module:hover svg, .prev-module:hover svg {
+    display: none;
+  }
+
+  .next-module:hover div, .prev-module:hover div {
+    font-size: 10px;
+    display: block;
+    animation: anima 0.6s ease;
   }
