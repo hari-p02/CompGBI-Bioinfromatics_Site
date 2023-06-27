@@ -27,7 +27,7 @@ const Skills = () => {
                 <div className='description'> 
                     <h3>Analyzing Seqeunces</h3>
                     <p>
-                    How can we work with large DAN-seq data?
+                    How can we work with large DNA-seq data?
                     </p>
                 </div>
             </div>

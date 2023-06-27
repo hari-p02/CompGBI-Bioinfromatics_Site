@@ -2,19 +2,20 @@ import './App.css';
 import Navbar from './componenets/Navbar';
 import Home from './pages/Home';
 import Modules from './pages/Modules';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Navbar />}>
+        <Route index element={<Home />} />
+        <Route path="/modules" element={<Modules />} />
+    </Route>
+  )
+)
 
 function App() {
   return (
-    <Router> 
-      <div className="App">
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/modules" element={<Modules />} />
-        </Routes>
-      </div>
-    </Router>
+    <RouterProvider router={router} />
   );
 }
 
