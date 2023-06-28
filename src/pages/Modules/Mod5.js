@@ -51,7 +51,7 @@ const Mod5 = () => {
                 transform="translate(0.003 0)"
               ></path>
             </svg>
-            Evolution and Phylogenetics
+            Evolution & Phylogenetics
             <div
               className="dropdown"
               style={{ display: `${isClicked ? "block" : "none"}` }}

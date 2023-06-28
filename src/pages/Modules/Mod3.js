@@ -50,7 +50,7 @@ const Mod3 = () => {
                 transform="translate(0.003 0)"
               ></path>
             </svg>
-            Introduction to RNA Sequencing
+            RNA Sequencing
             <div
               className="dropdown"
               style={{ display: `${isClicked ? "block" : "none"}` }}

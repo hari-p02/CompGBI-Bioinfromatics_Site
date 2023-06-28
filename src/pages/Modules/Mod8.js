@@ -50,7 +50,7 @@ const Mod8 = () => {
                 transform="translate(0.003 0)"
               ></path>
             </svg>
-            Evolution and Phylogenetics
+            Ethics in Bioinformatics
             <div
               className="dropdown"
               style={{ display: `${isClicked ? "block" : "none"}` }}
