@@ -14,6 +14,7 @@ import Mod2 from "./pages/Modules/Mod2";
 import Mod3 from "./pages/Modules/Mod3";
 import Mod4 from "./pages/Modules/Mod4";
 import Mod5 from "./pages/Modules/Mod5";
+import Mod6 from "./pages/Modules/Mod6";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -26,6 +27,7 @@ const router = createBrowserRouter(
         <Route path="mod3" element={<Mod3 />} />
         <Route path="mod4" element={<Mod4 />} />
         <Route path="mod5" element={<Mod5 />} />
+        <Route path="mod6" element={<Mod6 />} />
       </Route>
     </Route>
   )
