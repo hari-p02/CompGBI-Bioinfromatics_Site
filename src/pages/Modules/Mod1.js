@@ -6,6 +6,18 @@ const Mod1 = () => {
   const [videoUrl, setVideoUrl] = useState(
     "https://www.youtube.com/embed/DKh7C-TeokU"
   );
+  const [active, setActive] = useState([
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+  ]);
 
   const data = [
     {
@@ -147,8 +159,29 @@ const Mod1 = () => {
               style={{ borderRadius: "5px", border: "none", width: "100%" }}
             ></iframe>
             <div className="players">
-              {data.map((temp) => (
-                <div class="info" onClick={() => setVideoUrl(temp.url)}>
+              {data.map((temp, index) => (
+                <div
+                  key={index}
+                  class={"info " + (active[index] ? "active" : "")}
+                  onClick={() => {
+                    setVideoUrl(temp.url);
+                    let updateactive = [
+                      false,
+                      false,
+                      false,
+                      false,
+                      false,
+                      false,
+                      false,
+                      false,
+                      false,
+                      false,
+                    ];
+                    updateactive[index] = true;
+                    setActive(updateactive);
+                    console.log(active[index]);
+                  }}
+                >
                   <div className="num">{temp.number}</div>
                   <img src={temp.thumbnail} alt="Video Thumbnail" />
                   <div>
