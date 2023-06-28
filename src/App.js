@@ -10,6 +10,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Mod1 from "./pages/Modules/Mod1";
+import Mod2 from "./pages/Modules/Mod2";
+import Mod3 from "./pages/Modules/Mod3";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -18,7 +20,8 @@ const router = createBrowserRouter(
       <Route path="modules" element={<ModsLayout />}>
         <Route index element={<Modules />} />
         <Route path="mod1" element={<Mod1 />} />
-        <Route path="mod2" element={<div>Hello</div>} />
+        <Route path="mod2" element={<Mod2 />} />
+        <Route path="mod3" element={<Mod3 />} />
       </Route>
     </Route>
   )
