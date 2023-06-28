@@ -196,7 +196,11 @@ const Mod2 = () => {
             some of the necessary background biology. Please watch the following
             video before continuing to the next section:
           </p>
-          <p>https://www.youtube.com/watch?v=8kK2zwjRV0M</p>
+          <p>
+            <a href="https://www.youtube.com/watch?v=8kK2zwjRV0M">
+              https://www.youtube.com/watch?v=8kK2zwjRV0M
+            </a>
+          </p>
           <h3>2.2 Next-generation sequencing</h3>
           <p>
             &emsp;&emsp;Rather delving into the full history of sequencing
@@ -275,7 +279,9 @@ const Mod2 = () => {
             video on the history of the Human Genome Project.
           </p>
           <p>
-            https://www.youtube.com/watch?v=AhsIF-cmoQQ&amp;ab_channel=TED-Ed
+            <a href="https://www.youtube.com/watch?v=AhsIF-cmoQQ&ab_channel=TED-Ed">
+              https://www.youtube.com/watch?v=AhsIF-cmoQQ&amp;ab_channel=TED-Ed
+            </a>
           </p>
           <p>
             &emsp;&emsp;Now, let's get started with the activity! First, we need
@@ -286,7 +292,11 @@ const Mod2 = () => {
           <ol>
             <li>
               Navigate to the Short Read Archive (SRA) of the National Center
-              for Biotechnology Information (https://www.ncbi.nlm.nih.gov/sra).
+              for Biotechnology Information (
+              <a href="https://www.ncbi.nlm.nih.gov/sra">
+                https://www.ncbi.nlm.nih.gov/sra
+              </a>
+              ).
             </li>
             <li>
               In the search bar put 'homo sapien[Organism]', followed by any

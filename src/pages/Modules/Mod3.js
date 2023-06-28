@@ -172,8 +172,11 @@ const Mod3 = () => {
           <ul>
             <li>
               DNA extraction methods cannot be directly applied to RNA because
-              RNA is structurally very different
-              (https://www.labome.com/method/RNA-Extraction.html)
+              RNA is structurally very different (
+              <a href="https://www.labome.com/method/RNA-Extraction.html">
+                https://www.labome.com/method/RNA-Extraction.html
+              </a>
+              )
             </li>
             <li>
               RNA sequencing is a technique that can examine the quantity and
@@ -187,8 +190,11 @@ const Mod3 = () => {
           <h3>1) RNA Extraction</h3>
           <ul>
             <li>
-              method: using organic solvents/chaotropic agents
-              (https://www.labome.com/method/RNA-Extraction.html)
+              method: using organic solvents/chaotropic agents (
+              <a href="https://www.labome.com/method/RNA-Extraction.html">
+                https://www.labome.com/method/RNA-Extraction.html
+              </a>
+              )
             </li>
           </ul>
           <p className="text-image">
@@ -199,8 +205,11 @@ const Mod3 = () => {
             <li>enzymatic assays</li>
             <li>TRIzol method</li>
             <li>
-              many diff strategies, but all share 3 aims:
-              (https://www.frontiersin.org/articles/10.3389/fmicb.2015.00476/full)
+              many diff strategies, but all share 3 aims: (
+              <a href="https://www.frontiersin.org/articles/10.3389/fmicb.2015.00476/full">
+                https://www.frontiersin.org/articles/10.3389/fmicb.2015.00476/full
+              </a>
+              )
               <ul>
                 <li>
                   comprehensive lysis of cells and extraction of intracellular
@@ -276,7 +285,12 @@ const Mod3 = () => {
           </ul>
           <h3>ACTIVITY</h3>
           <ul>
-            <li>youtube video: https://www.youtube.com/watch?v=jA8RI4u_hd8</li>
+            <li>
+              youtube video:{" "}
+              <a href="https://www.youtube.com/watch?v=jA8RI4u_hd8">
+                https://www.youtube.com/watch?v=jA8RI4u_hd8
+              </a>
+            </li>
           </ul>
           <h1>Gene Expression</h1>
           <h2>Differential Gene Expression (DGE)</h2>
@@ -296,7 +310,9 @@ const Mod3 = () => {
             </li>
           </ul>
           <p>
-            https://www.nature.com/scitable/topicpage/gene-expression-14121669/
+            <a href="https://www.nature.com/scitable/topicpage/gene-expression-14121669/">
+              https://www.nature.com/scitable/topicpage/gene-expression-14121669/
+            </a>
           </p>
           <h1>Protein Expression</h1>
           <h2>What is Protein Expression?</h2>
@@ -311,7 +327,9 @@ const Mod3 = () => {
                 </li>
                 <li>
                   Source:
-                  https://www.cancer.gov/publications/dictionaries/cancer-terms/def/protein-expression
+                  <a href="https://www.cancer.gov/publications/dictionaries/cancer-terms/def/protein-expression">
+                    https://www.cancer.gov/publications/dictionaries/cancer-terms/def/protein-expression
+                  </a>
                 </li>
               </ul>
             </li>
@@ -362,10 +380,14 @@ const Mod3 = () => {
           </h2>
           <ul>
             <li>
-              https://www.biosyn.com/faq/what-is-protein-expression.aspx#!
+              <a href="https://www.biosyn.com/faq/what-is-protein-expression.aspx#!">
+                https://www.biosyn.com/faq/what-is-protein-expression.aspx#!
+              </a>
             </li>
             <li>
-              https://www.thermofisher.com/us/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/overview-protein-expression-systems.html#2
+              <a href="https://www.thermofisher.com/us/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/overview-protein-expression-systems.html#2">
+                https://www.thermofisher.com/us/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/overview-protein-expression-systems.html#2
+              </a>
             </li>
           </ul>
           <h1>Differential Expression Analysis</h1>
@@ -421,7 +443,9 @@ const Mod3 = () => {
           </p>
           <ul>
             <li>
-              https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/biological-interpretation-of-gene-expression-data-2/
+              <a href="https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/biological-interpretation-of-gene-expression-data-2/">
+                https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/biological-interpretation-of-gene-expression-data-2/
+              </a>
             </li>
           </ul>
           <h2>ACTIVITY</h2>
@@ -438,7 +462,9 @@ const Mod3 = () => {
               perform functional analysis on gene lists with R-based tools
             </li>
             <li>
-              https://hbctraining.github.io/DGE_workshop/lessons/04_DGE_DESeq2_analysis.html
+              <a href="https://hbctraining.github.io/DGE_workshop/lessons/04_DGE_DESeq2_analysis.html">
+                https://hbctraining.github.io/DGE_workshop/lessons/04_DGE_DESeq2_analysis.html
+              </a>
             </li>
           </ul>
           <h1>Activity</h1>
@@ -459,14 +485,26 @@ const Mod3 = () => {
           </ul>
           <h2>Map sequencing reads to a reference genome</h2>
           <ul>
-            <li>Burrows-Wheeler Aligner (https://bio-bwa.sourceforge.net/)</li>
-            <li>https://genomics.sschmeier.com/ngs-mapping/</li>
+            <li>
+              Burrows-Wheeler Aligner (
+              <a href="https://bio-bwa.sourceforge.net/">
+                https://bio-bwa.sourceforge.net/
+              </a>
+              )
+            </li>
+            <li>
+              <a href="https://genomics.sschmeier.com/ngs-mapping/">
+                https://genomics.sschmeier.com/ngs-mapping/
+              </a>
+            </li>
           </ul>
           <h2>Statistical Tests</h2>
           <ul>
             <li>
               Likelihood Ratio Test (LRT) :
-              https://hbctraining.github.io/DGE_workshop/lessons/08_DGE_LRT.html
+              <a href="https://hbctraining.github.io/DGE_workshop/lessons/08_DGE_LRT.html">
+                https://hbctraining.github.io/DGE_workshop/lessons/08_DGE_LRT.html
+              </a>
               <ul>
                 <li>
                   LRT is used to identify any genes that show change in
