@@ -26,7 +26,7 @@ const Mod6 = () => {
                 transform="translate(0.003 0)"
               ></path>
             </svg>
-            Evolution and Phylogenetics
+            Applications of Bioinformatics
           </div>
           <div className="chevrons">
             <div className="prev-module">
