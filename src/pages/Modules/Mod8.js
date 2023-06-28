@@ -99,7 +99,7 @@ const Mod8 = () => {
                   id="Fill"
                 ></path>
               </svg>
-              <div>
+              <div className="last-mod">
                 <Link to="/modules/mod7">Previous Module!</Link>
               </div>
             </div>

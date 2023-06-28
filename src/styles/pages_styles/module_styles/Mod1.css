@@ -187,7 +187,7 @@
 .prev-module:hover {
   width: 100px;
   border-radius: 10px;
-  background: linear-gradient(to right, #26d526, yellow);
+  background: linear-gradient(135deg, #8cdedc 0%, #e7bbe3 100%);
   animation: anima 0.6s ease;
   height: 75%;
   display: flex;

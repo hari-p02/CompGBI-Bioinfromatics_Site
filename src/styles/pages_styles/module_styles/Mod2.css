@@ -47,7 +47,7 @@
 
 .mod2 .text-content h1 {
   font-size: larger;
-  background-color: #f08080;
+  background: linear-gradient(135deg, #8cdedc 0%, #e7bbe3 100%);
   padding: 15px;
   border-radius: 10px;
 }
@@ -56,7 +56,7 @@
   font-size: large;
   /* font-style: oblique; */
   font-weight: 800;
-  background-color: #f4978e;
+  background: linear-gradient(135deg, #8cdedc 0%, #e7bbe3 100%);
   padding: 15px;
   border-radius: 10px;
 }
@@ -65,7 +65,7 @@
   font-size: medium;
   /* font-style: oblique; */
   font-weight: 800;
-  background-color: #f8ad9d;
+  background: linear-gradient(135deg, #8cdedc 0%, #e7bbe3 100%);
   padding: 15px;
   border-radius: 10px;
 }

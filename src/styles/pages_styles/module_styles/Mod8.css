@@ -14,7 +14,7 @@
 
 .mod8 .text-content h1 {
   font-size: larger;
-  background-color: #e4bfe4;
+  background: linear-gradient(135deg, #8cdedc 0%, #e7bbe3 100%);
   padding: 15px;
   border-radius: 10px;
 }
@@ -23,7 +23,7 @@
   font-size: large;
   /* font-style: oblique; */
   font-weight: 800;
-  background-color: #e4dee4;
+  background: linear-gradient(135deg, #8cdedc 0%, #e7bbe3 100%);
   padding: 15px;
   border-radius: 10px;
 }
@@ -32,7 +32,7 @@
   font-size: medium;
   /* font-style: oblique; */
   font-weight: 800;
-  background-color: #ede3e4;
+  background: linear-gradient(135deg, #8cdedc 0%, #e7bbe3 100%);
   padding: 15px;
   border-radius: 10px;
 }
@@ -41,7 +41,7 @@
   font-size: medium;
   /* font-style: oblique; */
   font-weight: 800;
-  background-color: #cfbeee;
+  background: linear-gradient(135deg, #8cdedc 0%, #e7bbe3 100%);
   padding: 15px;
   border-radius: 10px;
 }
@@ -63,4 +63,14 @@
 
 .end {
   font-size: small;
+  background: linear-gradient(135deg, #8cdedc 0%, #e7bbe3 100%);
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+
+.last-mod {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
 }
