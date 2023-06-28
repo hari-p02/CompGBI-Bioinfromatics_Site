@@ -1,204 +1,209 @@
 .card-mod1 {
-    position: relative;
-    width: 75vw;
-    height: 75vh;
-    background: #fff;
-    overflow: hidden;
-    display: flex;
-    /* justify-content: space-around; */
-    border-radius: 30px;
-    padding: 10px;
-    box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
-  }
-  
-  .circles,
-  .browser {
-    height: 30px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .circles {
-    width: 10%;
-    gap: 8px;
-    padding: 10px;
-  }
-  
-  .c {
-    width: 09px;
-    height: 9px;
-    border-radius: 50%;
-    box-shadow: inset 2px 2px 5px rgba(235, 235, 235, 0.356);
-  }
-  
-  .c:first-child {
-    background-color: red;
-  }
-  
-  .c:nth-child(2) {
-    background-color: rgb(204, 167, 4);
-  }
-  
-  .c:last-child {
-    background-color: green;
-  }
-  
-  .browser {
-    width: 80%;
-    padding: 5px;
-    display: flex;
-    gap: 10px;
-  }
-  
-  .chevrons {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 20%;
-    height: 100%;
-  }
-  
-  .search-bar {
-    position: relative;
-    border: 0.5px solid black;
-    border-radius: 5px;
-    padding: 5px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-    color: rgb(88, 88, 88);
-    box-shadow: inset 2px 2px 2px #05050525;
-  }
-  
-  .search-bar svg {
-    position: absolute;
-    left: 10px;
-  }
+  position: relative;
+  width: 75vw;
+  height: 75vh;
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  /* justify-content: space-around; */
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15),
+    0 6px 12px 0 rgba(24, 94, 224, 0.15);
+}
 
-  .video-player {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    /* color: white; */
-    font-size: 24px;
-    font-weight: bold;
-    /* border: 3px solid #73AD21; */
-    width: 72vw;
-    /* height: 35vh; */
-    display: flex;
-    justify-content: space-around;
-  }
+.circles,
+.browser {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
 
-  .video-player .players {
-    margin-left: 20px;
-  }
+.circles {
+  width: 10%;
+  gap: 8px;
+  padding: 10px;
+}
 
-  .players {
-    overflow: scroll;
-    width: 50vw;
-    height: 65vh;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    /* border: 3px solid #73AD21; */
-  }
+.c {
+  width: 09px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: inset 2px 2px 5px rgba(235, 235, 235, 0.356);
+}
 
-  
-  .mod1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 75vh; */
-    /* border: 3px solid #73AD21; */
-    /* flex-direction: column; */
-    margin-top: 50px;
-  }
+.c:first-child {
+  background-color: red;
+}
 
-  .info {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    width: 320px;
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    /* box-shadow: 0 0 100px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15); */
-    border-radius: 15px;
-    /* box-shadow: 0px 0px 5px -3px #111; */
-    /* border: 3px solid #73AD21; */
-  }
+.c:nth-child(2) {
+  background-color: rgb(204, 167, 4);
+}
 
-  .info:hover {
-    box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
-    cursor: pointer;
-    transition: 0.5s;
-  }
+.c:last-child {
+  background-color: green;
+}
 
-  .info img {
-    width: 25%;
-    border-radius: 5px;
-    margin: 5px 10px 5px 10px;
-    /* border: 3px solid #73AD21; */
-  }
+.browser {
+  width: 80%;
+  padding: 5px;
+  display: flex;
+  gap: 10px;
+}
 
-  
+.chevrons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+}
 
-  .account {
-    font-weight: 100;
-    font-size: small;
-  }
+.search-bar {
+  position: relative;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: rgb(88, 88, 88);
+  box-shadow: inset 2px 2px 2px #05050525;
+}
 
-  .num {
-    font-weight: 100;
-    font-size: small;
-    padding: 10px;
-    /* border: 3px solid #73AD21; */
-  }
+.search-bar svg {
+  position: absolute;
+  left: 10px;
+}
 
-  .title {
-    font-weight: 500;
-    font-size: medium;
-  }
+.video-player {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  /* color: white; */
+  font-size: 24px;
+  font-weight: bold;
+  /* border: 3px solid #73AD21; */
+  width: 72vw;
+  /* height: 35vh; */
+  display: flex;
+  justify-content: space-around;
+}
 
-  .collab a {
-    color: blue;
-  }
+.video-player .players {
+  margin-left: 20px;
+}
 
-  .collab {
-    display: flex;
-    justify-content: center;
-    margin-top: 25px;
-  }
+.players {
+  overflow: scroll;
+  width: 50vw;
+  height: 65vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* border: 3px solid #73AD21; */
+}
 
-  .next-module div, .prev-module div {
-    display: none;
-  }
+.mod1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 75vh; */
+  /* border: 3px solid #73AD21; */
+  /* flex-direction: column; */
+  margin-top: 50px;
+}
 
-  .next-module:hover, .prev-module:hover  {
-    width: 100px;
-    border-radius: 10px;
-    background: linear-gradient(to right, #26d526, yellow);
-    animation: anima 0.6s ease;
-    height: 75%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
+.info {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 320px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  /* box-shadow: 0 0 100px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15); */
+  border-radius: 15px;
+  /* box-shadow: 0px 0px 5px -3px #111; */
+  /* border: 3px solid #73AD21; */
+}
 
-  .next-module:hover svg, .prev-module:hover svg {
-    display: none;
-  }
+.info:hover {
+  box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15),
+    0 6px 12px 0 rgba(24, 94, 224, 0.15);
+  cursor: pointer;
+  transition: 0.5s;
+}
 
-  .next-module:hover div, .prev-module:hover div {
-    font-size: 10px;
-    display: block;
-    animation: anima 0.6s ease;
-  }
+.info img {
+  width: 25%;
+  border-radius: 5px;
+  margin: 5px 10px 5px 10px;
+  /* border: 3px solid #73AD21; */
+}
+
+.account {
+  font-weight: 100;
+  font-size: small;
+}
+
+.num {
+  font-weight: 100;
+  font-size: small;
+  padding: 10px;
+  /* border: 3px solid #73AD21; */
+}
+
+.title {
+  font-weight: 500;
+  font-size: medium;
+}
+
+.collab a {
+  color: blue;
+}
+
+.collab {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.next-module div,
+.prev-module div {
+  display: none;
+}
+
+.next-module:hover,
+.prev-module:hover {
+  width: 100px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #26d526, yellow);
+  animation: anima 0.6s ease;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.next-module:hover svg,
+.prev-module:hover svg {
+  display: none;
+}
+
+.next-module:hover div,
+.prev-module:hover div {
+  font-size: 10px;
+  font-weight: 900;
+  display: block;
+  animation: anima 0.6s ease;
+}

@@ -45,7 +45,7 @@ const Mod3 = () => {
                 ></path>
               </svg>
               <div>
-                <Link to="/modules/mod1">Previous Module!</Link>
+                <Link to="/modules/mod2">Previous Module!</Link>
               </div>
             </div>
             <div className="next-module">
@@ -64,27 +64,12 @@ const Mod3 = () => {
                 ></path>
               </svg>
               <div>
-                <Link to="/modules/mod3">Next Module!</Link>
+                <Link to="/modules/mod4">Next Module!</Link>
               </div>
             </div>
           </div>
         </div>
         <div className="text-content">
-          <div>
-            <iframe
-              src="https://www.youtube.com/embed/wiL-pdMdB4w"
-              title="placeholder"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              id="video"
-              style={{
-                borderRadius: "5px",
-                border: "none",
-                width: "75%",
-                height: "75%",
-              }}
-            ></iframe>
-          </div>
           <h1>Module Outline</h1>
           <p>Learning Objectives</p>
           <ol>
@@ -112,7 +97,22 @@ const Mod3 = () => {
               </p>
             </li>
           </ol>
-          <h1>1. Introduction to RNA Sequencing</h1>
+          <h1>Introduction to RNA Sequencing</h1>
+          <div className="text-video">
+            <iframe
+              src="https://www.youtube.com/embed/wiL-pdMdB4w"
+              title="placeholder"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              id="video"
+              style={{
+                borderRadius: "30px",
+                border: "none",
+                width: "75%",
+                height: "100%",
+              }}
+            ></iframe>
+          </div>
           <h2>What is RNA-sequencing?</h2>
           <ul>
             <li>
@@ -162,7 +162,7 @@ const Mod3 = () => {
               </ul>
             </li>
           </ul>
-          <h1>2. Mapping reads &amp; read counts</h1>
+          <h1>Mapping reads &amp; read counts</h1>
           <ul>
             <li>
               read sequences are usually stored in compressed (gzipped) FASTQ
@@ -223,7 +223,7 @@ const Mod3 = () => {
           <ul>
             <li>youtube video: https://www.youtube.com/watch?v=jA8RI4u_hd8</li>
           </ul>
-          <h1>3. Gene Expression</h1>
+          <h1>Gene Expression</h1>
           <h2>Differential Gene Expression (DGE)</h2>
           <ul>
             <li>most common application of RNA-sequencing data</li>
@@ -243,7 +243,7 @@ const Mod3 = () => {
           <p>
             https://www.nature.com/scitable/topicpage/gene-expression-14121669/
           </p>
-          <h1>4. Protein Expression</h1>
+          <h1>Protein Expression</h1>
           <h2>What is Protein Expression?</h2>
           <ul>
             <li>
@@ -313,7 +313,7 @@ const Mod3 = () => {
               https://www.thermofisher.com/us/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/overview-protein-expression-systems.html#2
             </li>
           </ul>
-          <h1>5. Differential Expression Analysis</h1>
+          <h1>Differential Expression Analysis</h1>
           <h2>What is Differential Expression Analysis?</h2>
           <ul>
             <li>
@@ -386,7 +386,7 @@ const Mod3 = () => {
               https://hbctraining.github.io/DGE_workshop/lessons/04_DGE_DESeq2_analysis.html
             </li>
           </ul>
-          <h1>6. Activity</h1>
+          <h1>Activity</h1>
           <ul>
             <li>
               differential expression analysis

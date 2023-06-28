@@ -120,7 +120,21 @@ const Mod2 = () => {
             of monomers of a sequence in a readable format.
           </p>
           <h3>2.1 Why sequence?</h3>
-          <p>Recorded video #1</p>
+          <div className="text-video">
+            <iframe
+              src="https://www.youtube.com/embed/gAqbizvgoSE"
+              title="placeholder"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              id="video"
+              style={{
+                borderRadius: "30px",
+                border: "none",
+                width: "75%",
+                height: "100%",
+              }}
+            ></iframe>
+          </div>
           <p>
             &emsp;&emsp;Before moving further, it's a good idea to brush up on
             some of the necessary background biology. Please watch the following
@@ -161,7 +175,21 @@ const Mod2 = () => {
             fragments at their disposal.
           </p>
           <h2>Alignment</h2>
-          <p>Recorded video #2</p>
+          <div className="text-video">
+            <iframe
+              src="https://www.youtube.com/embed/74pamST1gGQ"
+              title="placeholder"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              id="video"
+              style={{
+                borderRadius: "30px",
+                border: "none",
+                width: "75%",
+                height: "100%",
+              }}
+            ></iframe>
+          </div>
           <p>
             &emsp;&emsp;Let's evaluate your alignment skills by playing the game
             using the link below! To play, try to find the best alignment by
