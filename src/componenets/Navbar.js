@@ -3,7 +3,7 @@ import "../styles/componenet_styles/Navbar.css";
 import { Link, Outlet } from "react-router-dom";
 const Navbar = () => {
   const [isClicked, setIsClicked] = useState([false, false, false]);
-  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+  // const [isDropdownVisible, setIsDropdownVisible] = useState(false);
   const bkstyle = {
     width: "100px",
     backgroundColor: "#e6eef9",
@@ -34,24 +34,24 @@ const Navbar = () => {
               isClicked[1] ? [false, false, false] : [false, true, false]
             );
           }}
-          onMouseEnter={() => setIsDropdownVisible(true)}
+          // onMouseEnter={() => setIsDropdownVisible(true)}
           // onMouseLeave={() => setIsDropdownVisible(false)}
         >
           Modules
         </Link>
 
-        <div
+        {/* <div
           class="dropdown"
-          style={{ display: isDropdownVisible ? "block" : "none" }}
-          onMouseEnter={() => setIsDropdownVisible(true)}
-          onMouseLeave={() => setIsDropdownVisible(false)}
+          // style={{ display: isDropdownVisible ? "block" : "none" }}
+          // onMouseEnter={() => setIsDropdownVisible(true)}
+          // onMouseLeave={() => setIsDropdownVisible(false)}
         >
           <ul>
             <li>Dropdown Item 1</li>
             <li>Dropdown Item 2</li>
             <li>Dropdown Item 3</li>
           </ul>
-        </div>
+        </div> */}
 
         <Link
           class="tab link-3"
