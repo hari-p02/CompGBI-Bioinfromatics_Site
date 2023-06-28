@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../styles/pages_styles/Home.css";
 import development from "../images/development.png";
 import dna from "../images/dna.png";
@@ -6,29 +6,50 @@ import evolution from "../images/evolution.png";
 import cell from "../images/cell.png";
 import choice from "../images/choice.png";
 import Skills from "../componenets/Skills";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const images = [development, dna, evolution, cell, choice];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [fadeType, setFadeType] = useState("fade-in");
+  const [isClicked, setIsClicked] = useState(false);
+  const searchRef = useRef(null);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setFadeType("fade-out");
-      setTimeout(() => {
-        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-        setFadeType("fade-in");
-      }, 3000); // Adjust the delay to control the fade-out duration
-    }, 5000);
+    const handleClickOutside = (event) => {
+      if (searchRef.current && !searchRef.current.contains(event.target)) {
+        setIsClicked(false);
+      }
+    };
 
-    return () => clearInterval(interval);
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []);
+
+  const handleSearchClick = () => {
+    setIsClicked(!isClicked);
+  };
+
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setFadeType("fade-out");
+  //     setTimeout(() => {
+  //       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+  //       setFadeType("fade-in");
+  //     }, 3000); // Adjust the delay to control the fade-out duration
+  //   }, 5000);
+
+  //   return () => clearInterval(interval);
+  // }, []);
 
   return (
     <div>
       <div className="front-intro">
-        <div className="front-card">
-          <div className="images">
+        <div className="card-mod2 temp">
+          {/* <div className="images">
             <div className="card">
               <div className={`card__content ${fadeType}`}>
                 <img
@@ -37,11 +58,131 @@ const Home = () => {
                 />
               </div>
             </div>
+          </div> */}
+          <div className="circles">
+            <div className="c"></div>
+            <div className="c"></div>
+            <div className="c"></div>
           </div>
-          <div className="intro-content">
-            <div>
+
+          <div className="browser">
+            <div
+              className="search-bar"
+              ref={searchRef}
+              onClick={handleSearchClick}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="7.89"
+                height="7.887"
+                viewBox="0 0 16.89 16.887"
+              >
+                <path
+                  id="Fill"
+                  d="M16.006,16.887h0l-4.743-4.718a6.875,6.875,0,1,1,.906-.906l4.719,4.744-.88.88ZM6.887,1.262a5.625,5.625,0,1,0,5.625,5.625A5.631,5.631,0,0,0,6.887,1.262Z"
+                  transform="translate(0.003 0)"
+                ></path>
+              </svg>
+              Introduction Video
+              <div
+                className="dropdown"
+                style={{ display: `${isClicked ? "block" : "none"}` }}
+              >
+                <div>
+                  <Link to="/">Introduction Video</Link>
+                </div>
+                <div>
+                  <Link to="/modules/mod1">Introduction to Python</Link>
+                </div>
+                <div>
+                  <Link to="/modules/mod2">Sequence Analysis</Link>
+                </div>
+                <div>
+                  <Link to="/modules/mod3">Introduction to RNA Sequencing</Link>
+                </div>
+                <div>
+                  <Link to="/modules/mod4">Genomic Variants</Link>
+                </div>
+                <div>
+                  <Link to="/modules/mod5">Evolution and Phylogenetics</Link>
+                </div>
+                <div>
+                  <Link to="/modules/mod6">Applications of Bioinformatics</Link>
+                </div>
+                <div>
+                  <Link to="/modules/mod7">
+                    Machine Learning With Bioinformatics
+                  </Link>
+                </div>
+                <div>
+                  <Link to="/modules/mod8">Ethics in Bioinformatics</Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="chevrons">
+              <div className="prev-module">
+                <svg
+                  viewBox="0 0 20 20"
+                  height="16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-name="20"
+                  id="20"
+                >
+                  <path
+                    transform="translate(6.25 3.75)"
+                    d="M0,6.25,6.25,0l.875.875L1.75,6.25l5.375,5.375L6.25,12.5Z"
+                    id="Fill"
+                  ></path>
+                </svg>
+                <div>
+                  <Link to="/modules">Modules!</Link>
+                </div>
+              </div>
+              <div className="next-module">
+                <svg
+                  viewBox="0 0 20 20"
+                  height="16"
+                  width="16"
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-name="20"
+                  id="21"
+                >
+                  <path
+                    transform="translate(6.625 3.75)"
+                    d="M7.125,6.25.875,12.5,0,11.625,5.375,6.25,0,.875.875,0Z"
+                    id="Fill"
+                  ></path>
+                </svg>
+                <div>
+                  <Link to="/modules/mod1">Next Module!</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-content">
+            <div className="welcome">
               <h1>Welcome to the CompGBI Lab's Bioinformatics Course!!!</h1>
-              <i>Discover the Power of Data-Driven Biology</i>
+              <h3>
+                <i>Discover the Power of Data-Driven Biology</i>
+              </h3>
+            </div>
+            <div className="intro-video">
+              <iframe
+                src="https://www.youtube.com/embed/MK1yL1_i5g8"
+                title="placeholder"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                id="video"
+                style={{
+                  borderRadius: "30px",
+                  border: "none",
+                  width: "75%",
+                  height: "100%",
+                }}
+              ></iframe>
             </div>
           </div>
         </div>
@@ -69,7 +210,13 @@ const Home = () => {
           mollit anim id est laborum.
         </p>
       </div>
-      <div className="goto-mods">
+      <Link
+        className="goto-mods"
+        to="/modules"
+        onClick={() => {
+          window.scrollTo(0, 0);
+        }}
+      >
         <button class="button">
           <svg
             viewBox="0 0 448 512"
@@ -84,7 +231,7 @@ const Home = () => {
           </svg>
           Go To Modules
         </button>
-      </div>
+      </Link>
     </div>
   );
 };

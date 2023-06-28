@@ -136,6 +136,9 @@ const Mod1 = () => {
                 style={{ display: `${isClicked ? "block" : "none"}` }}
               >
                 <div>
+                  <Link to="/">Introduction Video</Link>
+                </div>
+                <div>
                   <Link to="/modules/mod1">Introduction to Python</Link>
                 </div>
                 <div>
@@ -180,7 +183,7 @@ const Mod1 = () => {
                   ></path>
                 </svg>
                 <div>
-                  <Link to="/modules">Modules!</Link>
+                  <Link to="/">Previous Module!</Link>
                 </div>
               </div>
               <div className="next-module">

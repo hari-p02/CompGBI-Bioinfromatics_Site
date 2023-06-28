@@ -57,6 +57,9 @@ const Mod2 = () => {
               style={{ display: `${isClicked ? "block" : "none"}` }}
             >
               <div>
+                <Link to="/">Introduction Video</Link>
+              </div>
+              <div>
                 <Link to="/modules/mod1">Introduction to Python</Link>
               </div>
               <div>
