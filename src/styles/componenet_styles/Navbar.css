@@ -2,7 +2,8 @@
   display: flex;
   position: relative;
   background-color: #fff;
-  box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15), 0 6px 12px 0 rgba(24, 94, 224, 0.15);
+  box-shadow: 0 0 1px 0 rgba(24, 94, 224, 0.15),
+    0 6px 12px 0 rgba(24, 94, 224, 0.15);
   padding: 0.75rem;
   border-radius: 99px;
   width: 160px;
@@ -33,7 +34,7 @@
 }
 
 .tab:hover,
-.tab:focus{
+.tab:focus {
   width: 100px;
   background-color: #f7f7f7;
   transition: 0.25s ease-out;
@@ -42,32 +43,4 @@
 
 a {
   text-decoration: none;
-}
-
-
-.dropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  display: none;
-  background-color: #fff;
-  box-shadow: 0 6px 12px 0 rgba(24, 94, 224, 0.15);
-  padding: 0.75rem;
-  border-radius: 4px;
-  z-index: 1;
-}
-
-.dropdown ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.dropdown ul li {
-  padding: 0.5rem;
-  cursor: pointer;
-}
-
-.dropdown ul li:hover {
-  background-color: #f7f7f7;
 }

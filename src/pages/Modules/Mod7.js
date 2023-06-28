@@ -33,7 +33,7 @@ const Mod7 = () => {
                   transform="translate(0.003 0)"
                 ></path>
               </svg>
-              Introduction to Python
+              Machine Learning With Bioinformatics
             </div>
             <div className="chevrons">
               <div className="prev-module">

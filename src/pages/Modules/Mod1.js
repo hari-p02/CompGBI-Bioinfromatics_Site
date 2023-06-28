@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import "../../styles/pages_styles/module_styles/Mod1.css";
+import React, { useState, useEffect, useRef } from "react";
+import "../../styles/pages_styles/module_styles/Mod5.css";
 import { Link } from "react-router-dom";
 
 const Mod1 = () => {
@@ -18,6 +18,26 @@ const Mod1 = () => {
     false,
     false,
   ]);
+  const [isClicked, setIsClicked] = useState(false);
+  const searchRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (searchRef.current && !searchRef.current.contains(event.target)) {
+        setIsClicked(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const handleSearchClick = () => {
+    setIsClicked(!isClicked);
+  };
 
   const data = [
     {
@@ -85,7 +105,7 @@ const Mod1 = () => {
   return (
     <div className="mod1-back">
       <div className="mod1">
-        <div className="card-mod1">
+        <div className="card-mod2">
           <div className="circles">
             <div className="c"></div>
             <div className="c"></div>
@@ -93,7 +113,11 @@ const Mod1 = () => {
           </div>
 
           <div className="browser">
-            <div className="search-bar">
+            <div
+              className="search-bar"
+              ref={searchRef}
+              onClick={handleSearchClick}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="7.89"
@@ -107,6 +131,37 @@ const Mod1 = () => {
                 ></path>
               </svg>
               Introduction to Python
+              <div
+                className="dropdown"
+                style={{ display: `${isClicked ? "block" : "none"}` }}
+              >
+                <div>
+                  <Link to="/modules/mod1">Introduction to Python</Link>
+                </div>
+                <div>
+                  <Link to="/modules/mod2">Sequence Analysis</Link>
+                </div>
+                <div>
+                  <Link to="/modules/mod3">Introduction to RNA Sequencing</Link>
+                </div>
+                <div>
+                  <Link to="/modules/mod4">Genomic Variants</Link>
+                </div>
+                <div>
+                  <Link to="/modules/mod5">Evolution and Phylogenetics</Link>
+                </div>
+                <div>
+                  <Link to="/modules/mod6">Applications of Bioinformatics</Link>
+                </div>
+                <div>
+                  <Link to="/modules/mod7">
+                    Machine Learning With Bioinformatics
+                  </Link>
+                </div>
+                <div>
+                  <Link to="/modules/mod8">Ethics in Bioinformatics</Link>
+                </div>
+              </div>
             </div>
             <div className="chevrons">
               <div className="prev-module">

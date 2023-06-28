@@ -72,6 +72,7 @@
   font-size: 10px;
   color: rgb(88, 88, 88);
   box-shadow: inset 2px 2px 2px #05050525;
+  cursor: pointer;
 }
 
 .search-bar svg {
