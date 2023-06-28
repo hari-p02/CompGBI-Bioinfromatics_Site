@@ -1,0 +1,53 @@
+.mod5 .text-content p,
+.mod5 .text-content li {
+  font-size: small;
+  font-weight: 200;
+  padding: 0px 15px 0 15px;
+}
+
+.mod5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.mod5 .text-content h1 {
+  font-size: larger;
+  background-color: #bfabcb;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.mod5 .text-content h2 {
+  font-size: large;
+  /* font-style: oblique; */
+  font-weight: 800;
+  background-color: #e6c0e9;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.mod5 .text-content h3 {
+  font-size: medium;
+  /* font-style: oblique; */
+  font-weight: 800;
+  background-color: #f2d5f8;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.text-image {
+  display: flex;
+  justify-content: center;
+}
+
+.text-image img {
+  border-radius: 10px;
+}
+
+.text-video {
+  display: flex;
+  justify-content: center;
+  height: 50%;
+}
