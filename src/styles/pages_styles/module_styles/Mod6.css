@@ -14,7 +14,7 @@
 
 .mod6 .text-content h1 {
   font-size: larger;
-  background-color: #8cd790;
+  background-color: #de3c4b;
   padding: 15px;
   border-radius: 10px;
 }
@@ -23,7 +23,7 @@
   font-size: large;
   /* font-style: oblique; */
   font-weight: 800;
-  background-color: #aafcb8;
+  background-color: #df6471;
   padding: 15px;
   border-radius: 10px;
 }
@@ -32,7 +32,7 @@
   font-size: medium;
   /* font-style: oblique; */
   font-weight: 800;
-  background-color: #cdefd3;
+  background-color: #d89098;
   padding: 15px;
   border-radius: 10px;
 }

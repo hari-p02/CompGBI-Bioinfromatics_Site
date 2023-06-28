@@ -113,7 +113,7 @@ const Mod1 = () => {
                   ></path>
                 </svg>
                 <div>
-                  <Link to="/modules">Previous Module!</Link>
+                  <Link to="/modules">Modules!</Link>
                 </div>
               </div>
               <div className="next-module">
