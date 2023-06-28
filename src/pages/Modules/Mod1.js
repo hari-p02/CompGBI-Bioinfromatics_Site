@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "../../styles/pages_styles/module_styles/Mod5.css";
+import "../../styles/pages_styles/module_styles/Mod1.css";
 import { Link } from "react-router-dom";
 
 const Mod1 = () => {
