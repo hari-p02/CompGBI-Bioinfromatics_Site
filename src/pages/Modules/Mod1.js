@@ -83,7 +83,7 @@ const Mod1 = () => {
   ];
 
   return (
-    <>
+    <div className="mod1-back">
       <div className="mod1">
         <div className="card-mod1">
           <div className="circles">
@@ -201,7 +201,7 @@ const Mod1 = () => {
         </a>{" "}
         to access the Google Collab Notebook used in the videos!
       </p>
-    </>
+    </div>
   );
 };
 
