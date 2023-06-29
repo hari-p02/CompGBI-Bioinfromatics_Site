@@ -411,7 +411,24 @@ const Mod2 = () => {
             importance of molecular data in this effort.
           </p>
           <h2>Learn more</h2>
-          <p>Text goes here.</p>
+          <p>
+            <h3>Sequence analysis lectures:</h3>
+            <a href="https://www.usu.edu/math/jrstevens/bioinf/11.SeqIntro.pdf">
+              https://www.usu.edu/math/jrstevens/bioinf/11.SeqIntro.pdf
+            </a>
+            <br></br>
+            <a href="http://bio.lundberg.gu.se/courses/ht03/bio1/seq.pdf">
+              http://bio.lundberg.gu.se/courses/ht03/bio1/seq.pdf
+            </a>
+            <h3>Sequence alignment lecture:</h3>
+            <a href="https://learn.gencore.bio.nyu.edu/wp-content/uploads/2018/01/IntroSeqAlign2018.pdf">
+              https://learn.gencore.bio.nyu.edu/wp-content/uploads/2018/01/IntroSeqAlign2018.pdf
+            </a>
+            <h3>Cheminformatics sequence activity:</h3>
+            <a href="https://notebook.community/lilleswing/deepchem/examples/tutorials/21_Introduction_to_Bioinformatics">
+              https://notebook.community/lilleswing/deepchem/examples/tutorials/21_Introduction_to_Bioinformatics
+            </a>
+          </p>
         </div>
       </div>
     </div>

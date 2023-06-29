@@ -188,11 +188,11 @@ const Home = () => {
         </div>
       </div>
       <div className="expect">
-        <h2>What You Will Learn</h2>
+        <h1>What You Will Learn</h1>
       </div>
       <Skills />
       <div className="expect">
-        <h2>What To Expect!</h2>
+        <h1>What To Expect!</h1>
       </div>
       <div className="expect">
         <p>

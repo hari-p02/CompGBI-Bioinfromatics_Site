@@ -110,7 +110,7 @@ const Mod8 = () => {
           </div>
         </div>
         <div className="text-content">
-          <h1>Module Outline</h1>
+          <h1>Module 8 Outline</h1>
           <h2>Learning Objectives</h2>
           <ol>
             <li>

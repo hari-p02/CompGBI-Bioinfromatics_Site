@@ -156,7 +156,7 @@ const Mod6 = () => {
               ></iframe>
             </div> */}
           </ul>
-          <h1>Bioinformatics in Medicine</h1>
+          <h1>Module 6: Bioinformatics in Medicine</h1>
           <p>
             https://aimst.edu.my/event-news/what-bioinformatics-how-used-medicine/
             Applications of bioinformatics in medicine,preventative medicine and

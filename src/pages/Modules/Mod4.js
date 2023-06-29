@@ -432,6 +432,20 @@ const Mod4 = () => {
             gene EDAR.
           </p>
           <h2>6 Learn More</h2>
+          <p>
+            <h3>Variations in the human genome article:</h3>
+            <a href="https://www.genome.gov/dna-day/15-ways/human-genomic-variation">
+              https://www.genome.gov/dna-day/15-ways/human-genomic-variation
+            </a>
+            <h3>Most altered gene in cancer article:</h3>
+            <a href="https://www.nature.com/scitable/topicpage/p53-the-most-frequently-altered-gene-in-14192717/">
+              https://www.nature.com/scitable/topicpage/p53-the-most-frequently-altered-gene-in-14192717/
+            </a>
+            <h3>Types of genomic variants article:</h3>
+            <a href="https://www.genomicseducation.hee.nhs.uk/blog/various-types-of-variant-what-is-genomic-variation/">
+              https://www.genomicseducation.hee.nhs.uk/blog/various-types-of-variant-what-is-genomic-variation/
+            </a>
+          </p>
         </div>
       </div>
     </div>

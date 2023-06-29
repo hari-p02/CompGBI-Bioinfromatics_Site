@@ -128,7 +128,7 @@ const Mod3 = () => {
           </div>
         </div>
         <div className="text-content">
-          <h1>Module Outline</h1>
+          <h1>Module 3 Outline</h1>
           <p>Learning Objectives</p>
           <ol>
             <li>

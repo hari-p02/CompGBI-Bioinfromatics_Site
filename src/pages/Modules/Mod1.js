@@ -207,6 +207,7 @@ const Mod1 = () => {
               </div>
             </div>
           </div>
+
           <div className="video-player">
             <iframe
               src={videoUrl}

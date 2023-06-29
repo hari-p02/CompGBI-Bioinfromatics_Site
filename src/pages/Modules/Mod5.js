@@ -397,6 +397,22 @@ const Mod5 = () => {
           <h3>3.1 Computing phylogenetic trees coding activity</h3>
           <p>See python script.</p>
           <h2>Learn More</h2>
+          <p>
+            <h3>Intro to computational phylogenetics textbook pages:</h3>
+            <a href="https://www.cs.utexas.edu/~tandy/394C-2013-textbook.pdf">
+              https://www.cs.utexas.edu/~tandy/394C-2013-textbook.pdf{" "}
+            </a>
+            <h3>Building phylogenetic trees methods:</h3>
+            <a href="https://guava.physics.uiuc.edu/~nigel/courses/598BIO/498BIOonline-essays/hw2/files/hw2_li.pdf">
+              https://guava.physics.uiuc.edu/~nigel/courses/598BIO/498BIOonline-essays/hw2/files/hw2_li.pdf{" "}
+            </a>
+            <h3>
+              Popular suite of computational tools for inferring phylogenies:{" "}
+            </h3>
+            <a href="https://evolution.genetics.washington.edu/phylip.html">
+              https://evolution.genetics.washington.edu/phylip.html
+            </a>
+          </p>
         </div>
       </div>
     </div>
