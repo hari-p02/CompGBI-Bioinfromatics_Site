@@ -4,8 +4,20 @@ import { Link } from "react-router-dom";
 
 const Mod7 = () => {
   const [videoUrl, setVideoUrl] = useState(
-    "https://www.youtube.com/embed/DKh7C-TeokU"
+    "https://www.youtube.com/embed/tRYQE5hlCUU"
   );
+  const [active, setActive] = useState([
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+  ]);
   const [isClicked, setIsClicked] = useState(false);
   const searchRef = useRef(null);
 
@@ -27,7 +39,56 @@ const Mod7 = () => {
     setIsClicked(!isClicked);
   };
 
-  const data = [];
+  const data = [
+    {
+      url: "https://www.youtube.com/embed/tRYQE5hlCUU",
+      title: "Introduction",
+      thumbnail: "https://i.ytimg.com/vi/tRYQE5hlCUU/hqdefault.jpg",
+      number: 1,
+    },
+    {
+      url: "https://www.youtube.com/embed/GkbQTqnHuJE",
+      title: "What is Artificial Intelligence?",
+      thumbnail: "https://i.ytimg.com/vi/GkbQTqnHuJE/hqdefault.jpg",
+      number: 2,
+    },
+    {
+      url: "https://www.youtube.com/embed/NKwv4pFVIkg",
+      title: "How does Aritifical Intelligence Learn?",
+      thumbnail: "https://i.ytimg.com/vi/NKwv4pFVIkg/hqdefault.jpg",
+      number: 3,
+    },
+    {
+      url: "https://www.youtube.com/embed/13CiWzfUlOU",
+      title: "Linear Regression",
+      thumbnail: "https://i.ytimg.com/vi/13CiWzfUlOU/hqdefault.jpg",
+      number: 4,
+    },
+    {
+      url: "https://www.youtube.com/embed/a_IECAot7eo",
+      title: "Linear Regression (Code)",
+      thumbnail: "https://i.ytimg.com/vi/a_IECAot7eo/hqdefault.jpg",
+      number: 5,
+    },
+    {
+      url: "https://www.youtube.com/embed/3qHSOiLuuJg",
+      title: "Data Formats",
+      thumbnail: "https://i.ytimg.com/vi/3qHSOiLuuJg/hqdefault.jpg",
+      number: 6,
+    },
+    {
+      url: "https://www.youtube.com/embed/mpUP2FJiz1U",
+      title: "KMeans Clustering",
+      thumbnail: "https://i.ytimg.com/vi/mpUP2FJiz1U/hqdefault.jpg",
+      number: 7,
+    },
+    {
+      url: "https://www.youtube.com/embed/FtlrntOyLtY",
+      title: "Mean Shift Clustering",
+      thumbnail: "https://i.ytimg.com/vi/FtlrntOyLtY/hqdefault.jpg",
+      number: 8,
+    },
+  ];
 
   return (
     <>
@@ -144,8 +205,29 @@ const Mod7 = () => {
               style={{ borderRadius: "5px", border: "none", width: "100%" }}
             ></iframe>
             <div className="players">
-              {data.map((temp) => (
-                <div class="info" onClick={() => setVideoUrl(temp.url)}>
+              {data.map((temp, index) => (
+                <div
+                  key={index}
+                  class={"info " + (active[index] ? "active" : "")}
+                  onClick={() => {
+                    setVideoUrl(temp.url);
+                    let updateactive = [
+                      false,
+                      false,
+                      false,
+                      false,
+                      false,
+                      false,
+                      false,
+                      false,
+                      false,
+                      false,
+                    ];
+                    updateactive[index] = true;
+                    setActive(updateactive);
+                    console.log(active[index]);
+                  }}
+                >
                   <div className="num">{temp.number}</div>
                   <img src={temp.thumbnail} alt="Video Thumbnail" />
                   <div>
