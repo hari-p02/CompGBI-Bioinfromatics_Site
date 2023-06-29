@@ -81,7 +81,7 @@ const Modules = () => {
       bgkfrom: "#D90368",
       bkgto: "#9046CF",
       ref: "mod8",
-      desc: "By this point you will have lot a of amazing techniques you can use to understand Bioinformatics data, but <span>how exactly should you go about that? How do to respect data privacy? What are some of the consequences if you don’t?</span> This module is to help you understand the field of Bioinformatics from an ethical perspective, different from what you have been doing so far!",
+      desc: "By this point you will have lot a of amazing techniques you can use to understand Bioinformatics data, but <span>how exactly should you go about that? How do to respect data privacy? What are some of the consequences if you don’t?</span> This module is to help you understand the field of Bioinformatics from an ethical perspective, different from what you have been doing so far! In doing so you gain a <span>broader understanding of the field impacts society as a whole.</span>",
     },
   ];
   return (
