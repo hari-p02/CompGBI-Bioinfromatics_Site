@@ -255,7 +255,11 @@ const Mod1 = () => {
       </div>
       <p className="collab">
         Click{" "}
-        <a href="https://www.google.com/" rel="noreferrer" target="_blank">
+        <a
+          href="https://colab.research.google.com/github/hari-p02/compgbi-bioinformatics-notebooks/blob/master/Introduction_to_Python%20(2).ipynb"
+          rel="noreferrer"
+          target="_blank"
+        >
           &nbsp;here&nbsp;
         </a>{" "}
         to access the Google Collab Notebook used in the videos!
