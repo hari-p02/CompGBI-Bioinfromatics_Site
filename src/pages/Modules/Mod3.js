@@ -128,7 +128,7 @@ const Mod3 = () => {
           </div>
         </div>
         <div className="text-content">
-          <h1>Module 3 Outline</h1>
+          <h1>Module 3: RNA-sequencing</h1>
           <p>Learning Objectives</p>
           <ol>
             <li>
@@ -156,9 +156,19 @@ const Mod3 = () => {
             </li>
           </ol>
           <h1>Introduction to RNA Sequencing</h1>
+          <p>
+            &emsp;&emsp; What is RNA sequencing? RNA sequencing is a powerful
+            technique that scientists use to explore the important information
+            stored in RNA molecules. It helps them figure out what kinds of RNA
+            are present in a sample and how much of each type there is. By
+            looking at the sequence of RNA molecules, researchers can learn
+            about how genes work, find new types of RNA, and understand how
+            living things function at a tiny, molecular level. Watch the video
+            below to dive into a brief introduction to RNA sequencing.
+          </p>
           <div className="text-video">
             <iframe
-              src="https://www.youtube.com/embed/wiL-pdMdB4w"
+              src="https://www.youtube.com/embed/e6Ol20n2ur0"
               title="placeholder"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -171,373 +181,213 @@ const Mod3 = () => {
               }}
             ></iframe>
           </div>
-          <h2>What is RNA-sequencing?</h2>
-          <ul>
-            <li>
-              DNA extraction methods cannot be directly applied to RNA because
-              RNA is structurally very different (
-              <a href="https://www.labome.com/method/RNA-Extraction.html">
-                https://www.labome.com/method/RNA-Extraction.html
-              </a>
-              )
-            </li>
-            <li>
-              RNA sequencing is a technique that can examine the quantity and
-              sequences of RNA in a sample using next-generation
-            </li>
-          </ul>
-          <p className="text-image">
-            <img alt="chart" src="/images/mod4imgs/first.png" />
-          </p>
-          <h2>How does it work?</h2>
-          <h3>1) RNA Extraction</h3>
-          <ul>
-            <li>
-              method: using organic solvents/chaotropic agents (
-              <a href="https://www.labome.com/method/RNA-Extraction.html">
-                https://www.labome.com/method/RNA-Extraction.html
-              </a>
-              )
-            </li>
-          </ul>
-          <p className="text-image">
-            <img alt="protocol" src="/images/mod4imgs/second.png" />
-          </p>
-          <ul>
-            <li>PCR (polymerase chain reaction)</li>
-            <li>enzymatic assays</li>
-            <li>TRIzol method</li>
-            <li>
-              many diff strategies, but all share 3 aims: (
-              <a href="https://www.frontiersin.org/articles/10.3389/fmicb.2015.00476/full">
-                https://www.frontiersin.org/articles/10.3389/fmicb.2015.00476/full
-              </a>
-              )
-              <ul>
-                <li>
-                  comprehensive lysis of cells and extraction of intracellular
-                  nucleic acids into aqueous solution
-                </li>
-                <li>
-                  the removal of non-nucleic acid organic and inorganic
-                  molecules from resultant aqueous extracts
-                </li>
-                <li>
-                  the minimization of nucleic acid losses throughout this
-                  purification process
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <h1>Mapping reads &amp; read counts</h1>
-          <ul>
-            <li>
-              read sequences are usually stored in compressed (gzipped) FASTQ
-              files
-            </li>
-            <li>reads = short DNA fragments — typically 150 bp in length</li>
-          </ul>
-          <h3>With Alignment</h3>
-          <ul>
-            <li>
-              read sequences aligned to reference genome and counted into
-              annotated genes
-            </li>
-            <li>
-              can align reads with HISAT2 — fast and sensitive alignment program
-              for mapping sequencing reads
-              <ul>
-                <li>https://daehwankimlab.github.io/hisat2/</li>
-              </ul>
-            </li>
-            <li>
-              alignment generates a BAM file with mapped reads
-              <ul>
-                <li>
-                  BAM file consists of chromosome names &amp; lengths, and
-                  alignment section
-                </li>
-                <li>each file contains read alignments for each sample</li>
-              </ul>
-            </li>
-            <li>finds where each read comes from in the genome</li>
-            <li>alternative mappers: STAR, Subread</li>
-          </ul>
-          <h3>Without Alignment</h3>
-          <ul>
-            <li>
-              unmapped reads = reads that map nowhere on the reference genome
-            </li>
-            <li>
-              these are dumped in a separate bin to analyze easily and
-              separately from mapped reads
-            </li>
-          </ul>
-          <h3>Data Analysis</h3>
-          <h3>1) Read Quantification</h3>
-          <ul>
-            <li>counting the number of reads that align to each gene</li>
-          </ul>
-          <h3>2) Differential Gene Expression Analysis</h3>
-          <ul>
-            <li>will learn more about this later in this module</li>
-          </ul>
-          <h3>Normalizing &amp; Transforming Read Counts</h3>
-          <ul>
-            <li>aligned reads (BAMs) can be converted to counts</li>
-          </ul>
-          <h3>ACTIVITY</h3>
-          <ul>
-            <li>
-              youtube video:{" "}
-              <a href="https://www.youtube.com/watch?v=jA8RI4u_hd8">
-                https://www.youtube.com/watch?v=jA8RI4u_hd8
-              </a>
-            </li>
-          </ul>
-          <h1>Gene Expression</h1>
-          <h2>Differential Gene Expression (DGE)</h2>
-          <ul>
-            <li>most common application of RNA-sequencing data</li>
-            <li>determines which genes are expressed in a cell</li>
-            <li>
-              tools in R (have a toy data set)
-              <ul>
-                <li>
-                  early tools w simple statistical analysis (T test)
-                  <ul>
-                    <li>find a simple package</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
+          <h2>RNA Extraction</h2>
           <p>
-            <a href="https://www.nature.com/scitable/topicpage/gene-expression-14121669/">
-              https://www.nature.com/scitable/topicpage/gene-expression-14121669/
-            </a>
+            &emsp;&emsp;RNA extraction is a process that scientists use to
+            obtain RNA molecules from cells. It is like extracting valuable
+            genetic treasure from within a cell’s treasure chest. By carefully
+            breaking open the cells and isolating the RNA, researchers can study
+            its secrets and uncover important information about how genes are
+            expressed and how cells function. It is a crucial step in many
+            scientific studies, allowing us to unlock the mysteries of life’s
+            blueprint, the RNA. The YouTube video below will teach you how to
+            perform an RNA extraction.
           </p>
-          <h1>Protein Expression</h1>
-          <h2>What is Protein Expression?</h2>
-          <ul>
-            <li>
-              definition: refers to the production of proteins by cells.
-              <ul>
-                <li>
-                  In cancer applications, protein expression can give
-                  information about a specific type of cancer, the best
-                  treatment to use, and how effective the treatment is
-                </li>
-                <li>
-                  Source:
-                  <a href="https://www.cancer.gov/publications/dictionaries/cancer-terms/def/protein-expression">
-                    https://www.cancer.gov/publications/dictionaries/cancer-terms/def/protein-expression
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <h2>Transcription &amp; Translation</h2>
-          <ul>
-            <li>
-              <p>3 steps to transcription:</p>
-              <ol>
-                <li>
-                  <p>Initiation</p>
-                </li>
-                <li>
-                  <p>Elongation</p>
-                </li>
-                <li>
-                  <p>Termination</p>
-                </li>
-              </ol>
-            </li>
-            <li>
-              <p>translation: requires tRNA, mRNA</p>
-            </li>
-            <li>
-              <p>post translation modification</p>
-            </li>
-          </ul>
-          <h2>Recombinant Protein Expression Methods</h2>
-          <ul>
-            <li>
-              strategies: transfecting cells with a DNA vector that contains the
-              template and then culturing the cells so that they transcribe and
-              translate the desired protein
-            </li>
-          </ul>
-          <p className="text-image">
-            <img alt="expression methods" src="/images/mod4imgs/third.png" />
+          <div className="text-video">
+            <iframe
+              src="https://www.youtube.com/embed/IIpcwN7BWZg"
+              title="placeholder"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              id="video"
+              style={{
+                borderRadius: "30px",
+                border: "none",
+                width: "75%",
+                height: "100%",
+              }}
+            ></iframe>
+          </div>
+          <h2>Applications</h2>
+          <p>
+            &emsp;&emsp;RNA sequencing has a lot of exciting applications that
+            scientists use to understand more about living things. One of its
+            important uses is studying gene expression, which we will be
+            learning more about in a later video. By looking at the RNA
+            molecules present in cells, scientists can figure out which genes
+            are turned on or off, like switches controlling different functions
+            in our bodies. RNA sequencing also helps in medical research.
+            Scientists can compare RNA from healthy and diseased cells to
+            understand what goes wrong in diseases. This can lead to the
+            development of new treatments and personalized medicine approaches.
+            To learn more about the exciting possibilities in biology and
+            medicine that RNA sequencing opens the door to, watch the video
+            below.
           </p>
-          <h2>Mammalian Protein Expression</h2>
-          <ul>
-            <li>
-              mammalian proteins can be used to produce antibodies, complex
-              proteins, and proteins for use in functional cell-based assays
-            </li>
-          </ul>
-          <h2>
-            <em>FURTHER READINGS</em>:
-          </h2>
-          <ul>
-            <li>
-              <a href="https://www.biosyn.com/faq/what-is-protein-expression.aspx#!">
-                https://www.biosyn.com/faq/what-is-protein-expression.aspx#!
-              </a>
-            </li>
-            <li>
-              <a href="https://www.thermofisher.com/us/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/overview-protein-expression-systems.html#2">
-                https://www.thermofisher.com/us/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/overview-protein-expression-systems.html#2
-              </a>
-            </li>
-          </ul>
-          <h1>Differential Expression Analysis</h1>
-          <h2>What is Differential Expression Analysis?</h2>
-          <ul>
-            <li>
-              Performing statistical analysis on normalized read count data
-              <ul>
-                <li>determines changes in expression levels</li>
-              </ul>
-            </li>
-            <li>
-              EX: use this to decide, for a given gene, if an observed
-              difference in read is significant
-              <ul>
-                <li>
-                  greater than it should be due to natural random variation
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <h2>Methods</h2>
+          <div className="text-video">
+            <iframe
+              src="https://www.youtube.com/embed/gjzWJu-2IQ0"
+              title="placeholder"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              id="video"
+              style={{
+                borderRadius: "30px",
+                border: "none",
+                width: "75%",
+                height: "100%",
+              }}
+            ></iframe>
+          </div>
+          <h2>Mapping Reads & Read Counts</h2>
+          <p>
+            &emsp;&emsp; In RNA sequencing, scientists take small pieces called
+            “reads” from RNA molecules. They then match these reads to a
+            reference genome or transcriptome to see which genes are active.
+            Read counts show how many times a particular read appears, which
+            helps scientists understand gene expression levels. Mapping reads
+            and analyzing read counts help uncover how genes work and contribute
+            to studying diseases. The following video will provide more
+            explanation on mapping reads and read counts.
+          </p>
+          <div className="text-video">
+            <iframe
+              src="https://www.youtube.com/embed/BCUBCWhTGII"
+              title="placeholder"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              id="video"
+              style={{
+                borderRadius: "30px",
+                border: "none",
+                width: "75%",
+                height: "100%",
+              }}
+            ></iframe>
+          </div>
+          <h2>Gene Expression</h2>
+          <p>
+            &emsp;&emsp;RNA sequencing helps scientists understand gene
+            expression, which is how genes in our DNA are activated to make RNA
+            molecules. By collecting and analyzing RNA molecules from cells,
+            scientists can identify which genes are active. This knowledge is
+            crucial for understanding how our bodies function, discovering
+            disease-related changes, and developing new treatments. Learn more
+            about gene expression in the video below.
+          </p>
+          <div className="text-video">
+            <iframe
+              src="https://www.youtube.com/embed/vLltoyg_6KM"
+              title="placeholder"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              id="video"
+              style={{
+                borderRadius: "30px",
+                border: "none",
+                width: "75%",
+                height: "100%",
+              }}
+            ></iframe>
+          </div>
+          <h2>Protein Expression</h2>
+          <p>
+            &emsp;&emsp;RNA sequencing helps scientists study protein
+            expression, which is how genes in our DNA make proteins, the
+            building blocks of our bodies. By analyzing RNA molecules from
+            cells, scientists can figure out which genes are active and
+            producing RNA. This information is crucial for understanding how our
+            bodies function and finding ways to treat diseases. RNA sequencing
+            is an exciting tool that helps us explore the world of proteins and
+            their important roles in our health. The video below will explore
+            protein expression further.
+          </p>
+          <div className="text-video">
+            <iframe
+              src="https://www.youtube.com/embed/KeZr8zasYlk"
+              title="placeholder"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              id="video"
+              style={{
+                borderRadius: "30px",
+                border: "none",
+                width: "75%",
+                height: "100%",
+              }}
+            ></iframe>
+          </div>
+          <h2>Activity</h2>
+          <p>
+            &emsp;&emsp;In the following activity, students will be introduced
+            to the concept of the Burrows-Wheeler Alignment Algorithm and its
+            application in DNA sequencing using Python programming. The
+            Burrows-Wheeler Alignment Algorithm is a clever technique used in
+            DNA and RNA sequencing to find where short sequences of DNA or RNA
+            fit into a larger genome. It rearranges the genome’s characters in a
+            special way and uses smart indexing to quickly match the sequences.
+            By aligning the sequences to the genome, scientists can learn about
+            genetic variations, important genes, and how genes work in different
+            conditions or diseases. This algorithm helps us unlock important
+            information about genes and their roles in biology and medicine.
+            Access the Google Colaboratory notebook below to begin the activity.
+            Embed Burrows-Wheeler Alignment Activity:{" "}
+            <a href="/">google colab notebook</a>
+          </p>
+          <h2>Learn More</h2>
+          <div className="text-video">
+            <iframe
+              src="https://www.youtube.com/embed/WKAUtJQ69n8"
+              title="placeholder"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              id="video"
+              style={{
+                borderRadius: "30px",
+                border: "none",
+                width: "75%",
+                height: "100%",
+              }}
+            ></iframe>
+          </div>
           <ol>
             <li>
-              Negative Binomial (NB) distributions
-              <ul>
-                <li>edgeR</li>
-                <li>DESeq</li>
-              </ul>
+              <p>
+                <a href="https://www.biosyn.com/faq/what-is-protein-expression.aspx#">
+                  https://www.biosyn.com/faq/what-is-protein-expression.aspx#
+                </a>
+              </p>
             </li>
             <li>
-              Bayesian Approaches based on NB model
-              <ul>
-                <li>baySeq</li>
-                <li>EBSeq</li>
-              </ul>
+              <p>
+                <a href="https://www.thermofisher.com/us/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/overview-protein-expression-systems.html#2">
+                  https://www.thermofisher.com/us/en/home/life-science/protein-biology/protein-biology-learning-center/protein-biology-resource-library/pierce-protein-methods/overview-protein-expression-systems.html#2
+                </a>
+              </p>
+            </li>
+            <li>
+              <p>
+                {" "}
+                <a href="https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/biological-interpretation-of-gene-expression-data-2/">
+                  https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/biological-interpretation-of-gene-expression-data-2/
+                </a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="https://bio-bwa.sourceforge.net/">
+                  https://bio-bwa.sourceforge.net/
+                </a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <a href="https://bio-bwa.sourceforge.net/">
+                  https://bio-bwa.sourceforge.net/
+                </a>
+              </p>
             </li>
           </ol>
-          <h2>Visualizing &amp; Interpreting data</h2>
-          <ul>
-            <li>
-              heatmaps
-              <ul>
-                <li>
-                  can be combined with clustering methods — groups genes/samples
-                  based on similarity of gene expression pattern
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <p className="text-image">
-            <img alt="heatmap" src="/images/mod4imgs/fourth.png" />
-          </p>
-          <ul>
-            <li>
-              <a href="https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/biological-interpretation-of-gene-expression-data-2/">
-                https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/biological-interpretation-of-gene-expression-data-2/
-              </a>
-            </li>
-          </ul>
-          <h2>ACTIVITY</h2>
-          <ul>
-            <li>perform quality control on count data</li>
-            <li>
-              Use DESeq2 to obtain a list of significantly differentially
-              expressed genes
-            </li>
-            <li>
-              visualize expression patterns of differentially expressed genes
-            </li>
-            <li>
-              perform functional analysis on gene lists with R-based tools
-            </li>
-            <li>
-              <a href="https://hbctraining.github.io/DGE_workshop/lessons/04_DGE_DESeq2_analysis.html">
-                https://hbctraining.github.io/DGE_workshop/lessons/04_DGE_DESeq2_analysis.html
-              </a>
-            </li>
-          </ul>
-          <h1>Activity</h1>
-          <ul>
-            <li>
-              differential expression analysis
-              <ul>
-                <li>
-                  basic statistical analysis
-                  <ul>
-                    <li>basic T tests</li>
-                    <li>nearest neighbor classification</li>
-                    <li>regression analysis</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <h2>Map sequencing reads to a reference genome</h2>
-          <ul>
-            <li>
-              Burrows-Wheeler Aligner (
-              <a href="https://bio-bwa.sourceforge.net/">
-                https://bio-bwa.sourceforge.net/
-              </a>
-              )
-            </li>
-            <li>
-              <a href="https://genomics.sschmeier.com/ngs-mapping/">
-                https://genomics.sschmeier.com/ngs-mapping/
-              </a>
-            </li>
-          </ul>
-          <h2>Statistical Tests</h2>
-          <ul>
-            <li>
-              Likelihood Ratio Test (LRT) :
-              <a href="https://hbctraining.github.io/DGE_workshop/lessons/08_DGE_LRT.html">
-                https://hbctraining.github.io/DGE_workshop/lessons/08_DGE_LRT.html
-              </a>
-              <ul>
-                <li>
-                  LRT is used to identify any genes that show change in
-                  expression across the different levels
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <h1>REFERENCES</h1>
-          <ul>
-            <li>
-              <p>
-                https://www.technologynetworks.com/genomics/articles/rna-seq-basics-applications-and-protocol-299461
-              </p>
-            </li>
-            <li>
-              <p>
-                https://hbctraining.github.io/Intro-to-rnaseq-hpc-salmon/lessons/Intro-to-RNAseq.html
-              </p>
-            </li>
-            <li>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4863231/</li>
-            <li>https://hbctraining.github.io/Intro-to-R-with-DGE/</li>
-            <li>https://www.ncbi.nlm.nih.gov/books/NBK550334/</li>
-            <li>
-              https://training.galaxyproject.org/training-material/topics/transcriptomics/tutorials/rna-seq-reads-to-counts/tutorial.html
-            </li>
-            <li>
-              https://thesequencingcenter.com/knowledge-base/what-are-unmapped-reads/
-            </li>
-          </ul>
         </div>
       </div>
     </div>

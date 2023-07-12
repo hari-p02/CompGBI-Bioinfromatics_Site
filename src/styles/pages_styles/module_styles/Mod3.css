@@ -49,5 +49,6 @@
 .text-video {
   display: flex;
   justify-content: center;
-  height: 50%;
+  height: 100%;
+  /* border: 3px solid #73ad21; */
 }
