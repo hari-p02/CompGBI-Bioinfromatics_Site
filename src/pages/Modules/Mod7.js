@@ -205,6 +205,24 @@ const Mod7 = () => {
               style={{ borderRadius: "5px", border: "none", width: "100%" }}
             ></iframe>
             <div className="players">
+              <div class="info-code">
+                <div className="code-link">
+                  <p className="collab">
+                    <p>
+                      Click
+                      <a
+                        href="https://colab.research.google.com/github/hari-p02/compgbi-bioinformatics-notebooks/blob/master/Introduction_to_Python%20(2).ipynb"
+                        rel="noreferrer"
+                        target="_blank"
+                      >
+                        &nbsp;here&nbsp;
+                      </a>
+                      to access the Google
+                    </p>{" "}
+                    <p>Collab Notebook used in the videos!</p>
+                  </p>
+                </div>
+              </div>
               {data.map((temp, index) => (
                 <div
                   key={index}
@@ -240,13 +258,6 @@ const Mod7 = () => {
           </div>
         </div>
       </div>
-      <p className="collab">
-        Click{" "}
-        <a href="https://www.google.com/" rel="noreferrer" target="_blank">
-          &nbsp;here&nbsp;
-        </a>{" "}
-        to access the Google Collab Notebook used in the videos!
-      </p>
     </>
   );
 };
