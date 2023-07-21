@@ -62,27 +62,30 @@ const Mod8 = () => {
                 <Link to="/modules/mod1">Introduction to Python</Link>
               </div>
               <div>
-                <Link to="/modules/mod2">Sequence Analysis</Link>
+                <Link to="/modules/mod2">Introduction to R</Link>
               </div>
               <div>
-                <Link to="/modules/mod3">Introduction to RNA Sequencing</Link>
+                <Link to="/modules/mod3">Sequence Analysis</Link>
               </div>
               <div>
-                <Link to="/modules/mod4">Genomic Variants</Link>
+                <Link to="/modules/mod4">Introduction to RNA Sequencing</Link>
               </div>
               <div>
-                <Link to="/modules/mod5">Evolution and Phylogenetics</Link>
+                <Link to="/modules/mod5">Genomic Variants</Link>
               </div>
               <div>
-                <Link to="/modules/mod6">Applications of Bioinformatics</Link>
+                <Link to="/modules/mod6">Evolution and Phylogenetics</Link>
               </div>
               <div>
-                <Link to="/modules/mod7">
+                <Link to="/modules/mod7">Applications of Bioinformatics</Link>
+              </div>
+              <div>
+                <Link to="/modules/mod8">
                   Machine Learning With Bioinformatics
                 </Link>
               </div>
               <div>
-                <Link to="/modules/mod8">Ethics in Bioinformatics</Link>
+                <Link to="/modules/mod9">Ethics in Bioinformatics</Link>
               </div>
             </div>
           </div>
@@ -103,325 +106,455 @@ const Mod8 = () => {
                 ></path>
               </svg>
               <div className="last-mod">
-                <Link to="/modules/mod7">Previous Module!</Link>
+                <Link to="/modules/mod8">Previous Module!</Link>
               </div>
             </div>
             <div className="end">At the End!!!</div>
           </div>
         </div>
         <div className="text-content">
-          <h1>Module 8 Outline</h1>
+          <h1>Module 8: Ethics in Bioinformatics</h1>
+          <h2>Overview</h2>
+          <p>
+            The general purpose of this module is to introduce high school
+            students to the ethical considerations and challenges associated
+            with the field of bioinformatics. This module aims to foster
+            critical thinking, ethical awareness, and responsible
+            decision-making among students, empowering them to navigate the
+            complex ethical landscape of modern biotechnology.
+          </p>
           <h2>Learning Objectives</h2>
           <ol>
             <li>
-              <p>
-                To understand the ethical principles that bioinformaticians
-                face.
-              </p>
+              Identify and discuss the ethical dilemmas and implications arising
+              from the use of bioinformatics tools and technologies.
             </li>
             <li>
-              <p>
-                Understand the overlap of bioethics and computer ethics in
-                bioinformatics.
-              </p>
+              Encourage students to think critically about the ethical
+              implications of bioinformatics research.
+            </li>
+            <li>
+              Help students develop a sense of responsibility and ethical
+              decision-making frameworks when faced with bioinformatics-related
+              dilemmas.
+            </li>
+            <li>
+              Encourage students to engage in group discussions, debates, and
+              case studies, allowing them to analyze real-world scenarios and
+              ethical dilemmas related to bioinformatics.
             </li>
           </ol>
-          <h1>1. Introduction</h1>
-          <h3>Medical Ethics of Hippocrates</h3>
-          <ul>
-            <li>
-              Hippocrates is traditionally regarded as the father of medicine
-            </li>
-            <li>
-              Hippocratic Oath: an oath of ethics that health professionals must
-              oblige by in which ethical and professional medicinal practice is
-              emphasized.
-            </li>
-            <li>
-              Since the creation of the Hippocratic Oath in 400 BCE, new
-              additions and updates have been added, and entirely new documents
-              have been created in order to heed to societal shifts in ethics.
-            </li>
-            <li>
-              As technology advances and humans change, ethical standards evolve
-              with them.
-            </li>
-          </ul>
+          <h2>Introduction</h2>
+          <p>
+            Welcome to the world of bioinformatics! As high school students, you
+            have the power to shape scientific discovery and technology. But
+            with great potential comes the need for ethical considerations.
+          </p>
+          <p>
+            Bioinformatics combines biology, computer science, and data analysis
+            to uncover the mysteries of life. However, we must also address
+            ethical questions related to privacy, genetic discrimination,
+            informed consent, and responsible use of knowledge.
+          </p>
+          <p>
+            Through this module, we will explore these ethical challenges,
+            fostering your ability to make informed choices and contribute
+            responsibly. Let’s embark on this journey together, shaping a future
+            where bioinformatics thrives alongside ethical principles.
+          </p>
+          <h2>Ethical Considerations in Bioinformatics</h2>
+          <h3>Privacy and Data Security</h3>
+          <p>
+            Privacy refers to the right of individuals to control access to
+            their personal information. In the context of bioinformatics, it
+            involves safeguarding genetic data and associated personal details
+            from unauthorized access, use, or disclosure. Genetic data contains
+            sensitive information about an individual’s health, ancestry, and
+            potential genetic conditions, making it particularly vulnerable to
+            misuse or discrimination.
+          </p>
+          <p>
+            Data security, on the other hand, pertains to the measures and
+            practices put in place to protect data from unauthorized access,
+            breaches, or loss. In the field of bioinformatics, it involves
+            implementing robust technical and organizational safeguards to
+            ensure the confidentiality, integrity, and availability of genetic
+            and personal information.
+          </p>
           <p className="text-image">
             <img
-              alt="Hippocrates"
-              style={{ width: "25%" }}
-              src="/images/mod9imgs/first.png"
+              alt="Data Security vs. Data Privacy"
+              src="/images/ethics/image1.jpeg"
             />
           </p>
-          <ul>
-            <li>
-              sources:
-              https://link.springer.com/chapter/10.1007/978-90-481-3049-8_6#:~:text=He
-              was of opinion%2C that,the glory of his profession.
-            </li>
-          </ul>
-          <h3>Why is considering ethics in bioinformatics important?</h3>
+          <p className="text-image-caption">Data Security vs. Data Privacy</p>
           <p>
-            According to the AMA Journal of Ethics, “although it is already
-            clear that informatics is profoundly reshaping the health
-            professions, we are only beginning to come to terms with the
-            extraordinary risks and potential benefits of progress in the human
-            genome sciences”
-            (https://journalofethics.ama-assn.org/article/toward-striking-balance-bioinformatics/2001-03)
-            - As the number of machine learning techniques and artificial
-            intelligence applications in bioinformatics continues to increase,
-            principles of artificial intelligence ethics become more important
-            for bioinformaticians. -
-            https://www.uib.no/en/ii/153859/ethics-bioinformatics -
-            Bioinformatics entails the two powerful technologies of bioethics
-            and computer ethics. It uses the power of information technology and
-            biological processes to solve problems posed by biotechnology and
-            biomedicine.
-            (https://www.researchgate.net/publication/265046932_Ethics_of_Bioinformatics_Ethics_of_Bioinformatics_Ethics_of_Bioinformatics_Ethics_of_Bioinformatics_Ethics_of_Bioinformatics_A_Convergence_between_Bioethics_A_Convergence_between_Bioethics_A_Convergen)
+            Why is privacy and data security important in bioinformatics? Here
+            are a few key reasons:
           </p>
-          <h3>Bioethics</h3>
           <ul>
             <li>
-              <strong>Bioethics</strong> is a discipline that applies abstract
-              normative principles to particular biomedical contexts
-              (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7950205/)
+              <p>
+                Protecting Individual Rights: Respecting privacy is a
+                fundamental human right. Individuals have the right to control
+                their genetic information and decide how it is accessed, used,
+                and shared. Privacy safeguards in bioinformatics help maintain
+                autonomy and ensure that individuals have a say in how their
+                genetic data is utilized.
+              </p>
             </li>
             <li>
-              The term was first coined by Sargent Shriver in 1970 out of need
-              for philosophical reflection on the problems presented by modern
-              medicine.
-              <ul>
-                <li>
-                  (https://www.researchgate.net/publication/265046932_Ethics_of_Bioinformatics_Ethics_of_Bioinformatics_Ethics_of_Bioinformatics_Ethics_of_Bioinformatics_Ethics_of_Bioinformatics_A_Convergence_between_Bioethics_A_Convergence_between_Bioethics_A_Convergen)
-                </li>
-              </ul>
+              <p>
+                Minimizing Risks of Unauthorized Access and Misuse: Genetic data
+                contains highly personal and sensitive information. Without
+                adequate privacy and data security measures, unauthorized
+                individuals or entities could gain access to this information,
+                leading to its potential misuse or exploitation. Ensuring strong
+                data security mitigates these risks and protects individuals’
+                sensitive genetic secrets.
+              </p>
+            </li>
+            <li>
+              <p>
+                Preventing Genetic Discrimination: Genetic information has the
+                potential to influence decisions related to employment,
+                insurance, and personal relationships. Without proper privacy
+                measures, there is a risk of genetic discrimination, where
+                individuals may face prejudice or disadvantages based on their
+                genetic profiles. Protecting privacy helps minimize this risk
+                and promotes fair treatment for all.
+              </p>
             </li>
           </ul>
-          <h4>Four primary principles of traditional bioethics:</h4>
+          <p>
+            By advocating for robust privacy protections and adhering to ethical
+            guidelines, we can foster a culture of responsible data handling,
+            safeguarding the rights and dignity of individuals while driving the
+            progress of bioinformatics research in a secure and ethical manner.
+          </p>
+          <h3>Genetic Discrimination</h3>
+          <p>
+            Genetic discrimination occurs when an individual is treated unfairly
+            based on their genetic information, such as their predisposition to
+            certain diseases or other genetic traits. It can lead to prejudice,
+            denial of opportunities, or unequal treatment in various aspects of
+            life, including employment, insurance, and personal relationships.
+          </p>
+          <p>
+            Understanding and addressing genetic discrimination is crucial due
+            to unjust treatment solely based on an individual’s genetic
+            information, a loss of professional opportunities because of
+            unwarranted assumptions about one’s health or abilities, as well as
+            a restricted access to adequate healthcare as a result of denial of
+            coverage.
+          </p>
+          <p className="text-image">
+            <img
+              alt="Genetic Discrimination"
+              src="/images/ethics/image2.jpeg"
+            />
+          </p>
+          <p className="text-image-caption">Genetic Discrimination</p>
+          <p>
+            To combat genetic discrimination, several measures can be
+            implemented:
+          </p>
+          <ul>
+            <li>
+              <p>
+                Legal Protections: Laws and regulations can be put in place to
+                prohibit genetic discrimination in various areas, including
+                employment and insurance. These laws provide individuals with
+                legal recourse and help establish a framework for fair
+                treatment.
+              </p>
+            </li>
+            <li>
+              <p>
+                Education and Awareness: Raising awareness about genetic
+                discrimination among the general public, employers, and
+                healthcare providers is crucial. By educating individuals about
+                the ethical implications of genetic information, we can promote
+                understanding, empathy, and fair treatment.
+              </p>
+            </li>
+            <li>
+              <p>
+                Ethical Guidelines: Ethical guidelines and codes of conduct can
+                guide researchers, healthcare professionals, and policymakers in
+                handling genetic information responsibly. These guidelines
+                emphasize the importance of respecting autonomy, informed
+                consent, and avoiding discrimination in all aspects of
+                bioinformatics research and practice.
+              </p>
+            </li>
+          </ul>
+          <p>
+            By addressing genetic discrimination and promoting fair treatment,
+            we can create a more inclusive society where individuals are valued
+            for their abilities, character, and contributions rather than being
+            judged based on their genetic information. As future scientists and
+            citizens, it is our responsibility to advocate for ethical practices
+            and work towards a world free from genetic discrimination.
+          </p>
+          <h3>Informed Consent</h3>
+          <p>
+            In bioinformatics, informed consent is a vital ethical
+            consideration. It ensures that individuals have the necessary
+            information to make voluntary and informed decisions about the use
+            of their genetic and personal data in research.
+          </p>
+          <p className="text-image">
+            <img alt="Informed Consent" src="/images/ethics/image3.jpeg" />
+          </p>
+          <p className="text-image-caption">Informed Consent</p>
+          <p>Here’s why informed consent is important:</p>
+          <ul>
+            <li>
+              <p>
+                Autonomy: Informed consent respects an individual's rights to
+                make decisions about their data. It empowers them to have
+                control over how their genetic information is used.
+              </p>
+            </li>
+            <li>
+              <p>
+                Transparency and Trust: Informed consent promotes transparency
+                by providing clear information about research purposes, risks,
+                and benefits. This builds trust between individuals and
+                researchers.
+              </p>
+            </li>
+            <li>
+              <p>
+                Protection from Harm: Informed consent ensures individuals
+                understand potential risks and safeguards them from harm or
+                exploitation.
+              </p>
+            </li>
+          </ul>
+          <p>
+            To uphold informed consent, researchers provide comprehensive
+            information, ensure voluntary participation, assess understanding,
+            and document consent.
+          </p>
+          <h3>Dual-Use Dilemma</h3>
+          <p>
+            We face a complex ethical challenge called the dual-use dilemma in
+            bioinformatics. This dilemma arises when scientific research or
+            technology has the potential for both positive and negative
+            applications. Bioinformatics advancements can bring great benefits
+            in medicine, agriculture, and the environment, but they can also be
+            misused or have unintended consequences.
+          </p>
+          <p className="text-image">
+            <img alt="Dual-Use Dilemma" src="/images/ethics/image4.jpeg" />
+          </p>
+          <p className="text-image-caption">Dual-Use Dilemma</p>
+          <p>Here’s why the dual-use dilemma matters:</p>
+          <ul>
+            <li>
+              <p>
+                Ethical Responsibility: As scientists, we have a responsibility
+                to consider the broader implications of our work. We should
+                assess potential risks and benefits, making choices that
+                minimize harm and promote societal well-being.
+              </p>
+            </li>
+            <li>
+              <p>
+                Unintended Consequences: Dual-use situations can arise when
+                advancements have unintended negative effects. For instance, a
+                bioinformatics tool for disease diagnosis could be used for
+                invasive surveillance or genetic profiling without consent.
+                Recognizing these unintended consequences allows us to address
+                them proactively.
+              </p>
+            </li>
+            <li>
+              <p>
+                Impact on Society: Our decisions on the dual-use dilemma impact
+                societal values, public trust, and the perception of the
+                scientific community. Responsible use of bioinformatics aligns
+                with ethical standards and addresses societal needs.
+              </p>
+            </li>
+          </ul>
+          <p>
+            Addressing the dual-use dilemma involves reflection on potential
+            risks and benefits, responsible conduct in research, and appropriate
+            policies and regulations.
+          </p>
+          <h2>Case Studies and Discussions</h2>
+          <h3>Case Study 1: Genetic Privacy and Discrimination</h3>
+          <p>
+            Scenario: A company offers direct-to-consumer genetic testing kits,
+            allowing individuals to learn about their ancestry, health traits,
+            and potential disease risks. However, concerns arise regarding the
+            privacy and potential misuse of this genetic information.
+          </p>
+          <p>Discussion Questions:</p>
           <ol>
             <li>
-              <em>nonmaleficence</em> — there is a duty not to cause harm (Greek
-              physician Hippocrates in 5th Century BCE)
+              What are the potential benefits and risks of direct-to-consumer
+              genetic testing?
             </li>
             <li>
-              withhold information of uncertain significance or if no current
-              treatment exists.
+              How can individuals protect their genetic privacy and prevent
+              genetic discrimination?
             </li>
             <li>
-              <em>beneficence</em> — ethical desirability or ideal of
-              benefitting people
+              What ethical considerations should the company take into account
+              when handling and storing customers’ genetic data?
             </li>
             <li>
-              communicate all information regarding one’s diagnosis, prognosis,
-              treatment, and general health.
-            </li>
-            <li>
-              <em>justice</em> — fairness and equality
-            </li>
-            <li>laws against discrimination</li>
-            <li>practice of disclosing conflicts of interest</li>
-            <li>
-              <em>autonomy</em> — ideal of respecting people’s choices regarding
-              their own life and actions
+              Should there be regulations in place to govern the use and storage
+              of genetic information? If so, what should these regulations
+              entail?
             </li>
           </ol>
-          <h3>Computer Ethics</h3>
+          <h3>Case Study 2: Responsible Data Sharing and Open Science</h3>
           <p>
-            According to James H. Moor, a renowned figure in the computer
-            science field for his philosophical contributions, he states that
-            computer ethics is a dynamic and complex field of study which
-            considers relationships among facts, conceptualizations, policies,
-            and values with regard to constantly changing computer technology.
-            (https://www.researchgate.net/publication/265046932_Ethics_of_Bioinformatics_Ethics_of_Bioinformatics_Ethics_of_Bioinformatics_Ethics_of_Bioinformatics_Ethics_of_Bioinformatics_A_Convergence_between_Bioethics_A_Convergence_between_Bioethics_A_Convergen)
-            Moor also stated that the computer has had an impact on society like
-            no other recent technology, and it impacts almost every sector of
-            our lives. This requires us to rethink many of our policies, laws,
-            and behaviors.
+            Scenario: A bioinformatics research team develops a new algorithm
+            that can predict disease outcomes based on genomic data. They
+            publish their findings in an open-access journal, making the
+            algorithm available to the wider scientific community. However,
+            concerns arise regarding the potential misuse or misinterpretation
+            of the algorithm by others.
           </p>
-          <h3>Computer Ethics</h3>
-          <ul>
-            <li>
-              According to James H. Moor, a renowned figure in the computer
-              science field for his philosophical contributions, he states that
-              computer ethics is a dynamic and complex field of study which
-              considers relationships among facts, conceptualizations, policies,
-              and values with regard to constantly changing computer technology.
-              (https://www.researchgate.net/publication/265046932_Ethics_of_Bioinformatics_Ethics_of_Bioinformatics_Ethics_of_Bioinformatics_Ethics_of_Bioinformatics_Ethics_of_Bioinformatics_A_Convergence_between_Bioethics_A_Convergence_between_Bioethics_A_Convergen)
-            </li>
-            <li>
-              Moor also stated that the computer has had an impact on society
-              like no other recent technology, and it impacts almost every
-              sector of our lives.
-              <ul>
-                <li>
-                  This requires us to rethink many of our policies, laws, and
-                  behaviors.
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <h3>
-            The Computer Ethics Institute’s ten commandments of computer ethics:
-          </h3>
+          <p>Discussion Questions:</p>
           <ol>
             <li>
-              <p>Thou shalt not use a computer to harm other people.</p>
+              What are the benefits of open-access data sharing in
+              bioinformatics research?
             </li>
             <li>
-              <p>Thou shalt not interfere with other people’s computer work.</p>
+              How can researchers strike a balance between promoting scientific
+              progress through data sharing while ensuring responsible and
+              ethical use of shared data?
             </li>
             <li>
-              <p>
-                Thou shalt not snoop around in other people's computer files.
-              </p>
-            </li>
-            <li>
-              <p>Thou shalt not use a computer to steal.</p>
-            </li>
-            <li>
-              <p>Thou shalt not use a computer to bear false witness.</p>
-            </li>
-            <li>
-              <p>
-                Thou shalt not copy or use proprietary software for which you
-                have not paid.
-              </p>
-            </li>
-            <li>
-              <p>
-                Thou shalt not use other people’s computer resources without
-                authorization or proper compensation.
-              </p>
-            </li>
-            <li>
-              <p>
-                Thou shalt not appropriate other people’s intellectual output.
-              </p>
-            </li>
-            <li>
-              <p>
-                Thou shalt think about the social consequences of the program
-                you are writing or the system you are designing.
-              </p>
-            </li>
-            <li>
-              <p>
-                Thou shalt always use a computer in ways that ensure
-                consideration and respect for your fellow humans.
-              </p>
-            </li>
-            <li>
-              <p>
-                https://www.sciencedirect.com/topics/computer-science/computer-ethics
-              </p>
+              Should there be guidelines or ethical frameworks in place for the
+              responsible sharing of bioinformatics algorithms and data? If so,
+              what should they entail?
             </li>
           </ol>
-          <h1>2. Appropriate Uses &amp; Users</h1>
-          <ul>
-            <li>
-              In terms of societal benefits, large genomic databases and
-              datasets have valuable information to diagnose and treat diseases
-              <ul>
-                <li>
-                  However, our genetic code carries sensitive information that
-                  could be used for capitalistic gain in the pharmaceutical
-                  industry and insurance agencies. Capitalist interests neglect
-                  the proper treatments and diagnoses for all communities.
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <h3>Consent</h3>
-          <ul>
-            <li>
-              Documenting patient data, but using that data to predict other
-              future diseases
-              <ul>
-                <li>
-                  Patients could experience heightened anxiety in regards to
-                  future clinical manifestations that may or may not occur. This
-                  additional information that doctors could discover with
-                  bioinformatics could threaten a patient’s mental health if
-                  they do not want to know such information.
-                </li>
-              </ul>
-            </li>
-          </ul>
-          <h3>Replacing Professionals with Computers</h3>
+          <h3>Case Study 3: Ethical Considerations in Precision Medicine</h3>
           <p>
-            <strong>
-              <em>DISCUSSION ACTIVITY</em>
-            </strong>
-            : Although computer systems can improve patient care, is it
-            appropriate to train a computer to perform tasks that a working
-            professional does not have competence in? - Would it be appropriate
-            to let a machine determine a patient’s treatment without a trained
-            professional’s medical and scientific understanding?
+            Scenario: Precision medicine aims to tailor medical treatments to
+            individual patients based on their genetic makeup. However,
+            challenges arise in terms of privacy, informed consent, and
+            potential discrimination in the application of precision medicine
+            techniques.
           </p>
-          <h2>3. Privacy &amp; Confidentiality</h2>
-          <h3>Intro to privacy &amp; confidentiality</h3>
-          <ul>
+          <p>Discussion Questions:</p>
+          <ol>
             <li>
-              <p>
-                If all of our genetic codes were stored in a bioinformatics
-                database and if this database is breached by a hacker that broke
-                through the firewall, then our genetic code could potentially
-                fall into the hands of those with malicious intent.
-              </p>
-              <ul>
-                <li>
-                  Our genetic information defines the identity of our bodies and
-                  our mental characteristics, so much more personal and
-                  unchangeable information is on the line compared to something
-                  like credit card theft.
-                </li>
-                <li>Thus, sharing genomic data must be done securely.</li>
-              </ul>
-            </li>
-          </ul>
-          <h3>Open Source Software</h3>
-          <ul>
-            <li>
-              Open source software is code that is designed to be publicly
-              accessibly. This allows anyone to view, modify, and distribute the
-              code wherever they want. This relies on peer review and community
-              production.
+              What are the potential benefits and risks of precision medicine in
+              personalized treatment?
             </li>
             <li>
-              However, this allows bioinformatics systems to be hacked more
-              readily and it could display personal genetic information for the
-              public.
+              What ethical considerations should healthcare professionals and
+              researchers keep in mind when implementing precision medicine
+              approaches?
             </li>
-          </ul>
-          <h3>Data Sharing</h3>
-          <ul>
             <li>
-              Companies that you share your genomic data with could share such
-              information with third parties and not notify the individual of
-              this, which is a privacy concern. Though this information may
-              further research in diagnoses and treatments, knowing where your
-              genomic data is being used could be a concern an individual may
-              have.
+              How can potential biases and inequalities be addressed to ensure
+              equitable access to precision medicine for all individuals?
             </li>
-          </ul>
+          </ol>
+          <h2>Conclusions</h2>
           <p>
-            <strong>
-              <em>ACTIVITY</em>
-            </strong>
-            - youtube video: https://www.youtube.com/watch?v=5QBFYw1gu5o
+            By recognizing the future implications and embracing the associated
+            responsibilities, we can pave the way for an ethical and responsible
+            future in bioinformatics. The decisions made today will shape the
+            ethical landscape of the field, ensuring that scientific progress is
+            guided by ethical principles, societal well-being, and the
+            preservation of individual rights and dignity.
           </p>
-          <p>
-            <em>More readings:</em>-
-            https://www.sciencedirect.com/science/article/pii/S1532046421001441
-          </p>
-          <h2>Activity</h2>
+          <h2>Learn More</h2>
           <ul>
-            <li>case study + discussion</li>
             <li>
-              in forensics genome crime scene can mistake someone else for being
-              at the scene due to genome reading error — how this can be
-              problematic
+              <a href="https://www.linkedin.com/pulse/ethics-bioinformatics-challenges-considerations-venkatesh-chellappa#:~:text=There%20are%20a%20number%20of,disabilities%2C%20and%20other%20health%20conditions.">
+                Ethics in Bioinformatics: Challenges and Considerations -
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://journalofethics.ama-assn.org/article/toward-striking-balance-bioinformatics/2001-03">
+                Toward Striking a Balance in Bioinformatics - Journal of Ethics
+              </a>
+            </li>
+            <li>
+              <a href="https://vimeo.com/90006736">
+                Vimeo Video: Bioinformatics
+              </a>
+            </li>
+            <li>
+              <a href="https://vimeo.com/90742031">
+                Vimeo Video: Bioinformatics in the 21st Century
+              </a>
+            </li>
+          </ul>
+          <h3>Image References</h3>
+          <ol>
+            <li>
+              <a href="https://www.stealthlabs.com/blog/data-security-vs-data-privacy-an-imperative-distinction-to-protect-data/">
+                Data Security vs. Data Privacy: An Imperative Distinction to
+                Protect Data - Stealth Labs Blog
+              </a>
+            </li>
+            <li>
+              <a href="https://jjkellercompliancenetwork.com/institute/the-genetic-information-nondiscrimination-act-gina">
+                The Genetic Information Nondiscrimination Act (GINA) - J. J.
+                Keller Compliance Network
+              </a>
+            </li>
+            <li>
+              <a href="https://www.cancertherapyadvisor.com/home/news/conference-coverage/iaslc/wclc-2022/consent-forms-clinical-trials-too-long-complex-patients/">
+                Consent Forms for Clinical Trials: Too Long and Complex for
+                Patients - Cancer Therapy Advisor
+              </a>
+            </li>
+            <li>
+              <a href="https://www.slideserve.com/avery/balancing-secrecy-and-open-science-the-dual-use-dilemma">
+                Balancing Secrecy and Open Science: The Dual-Use Dilemma -
+                SlideServe
+              </a>
+            </li>
+          </ol>
+          <h3>Content References</h3>
+          <ul>
+            <li>
+              <a href="https://link.springer.com/chapter/10.1007/978-90-481-3049-8_6#:~:text=He">
+                Ethics of Bioinformatics - Springer
+              </a>
+            </li>
+            <li>
+              <a href="https://journalofethics.ama-assn.org/article/toward-striking-balance-bioinformatics/2001-03">
+                Toward Striking a Balance in Bioinformatics - Journal of Ethics
+              </a>
+            </li>
+            <li>
+              <a href="https://www.sciencedirect.com/topics/computer-science/computer-ethics">
+                Computer Ethics - ScienceDirect
+              </a>
+            </li>
+            <li>
+              <a href="https://www.researchgate.net/publication/265046932_Ethics_of_Bioinformatics_Ethics_of_Bioinformatics_Ethics_of_Bioinformatics_Ethics_of_Bioinformatics_Ethics_of_Bioinformatics_A_Convergence_between_Bioethics_A_Convergence_between_Bioethics_A_Convergen">
+                Ethics of Bioinformatics: A Convergence between Bioethics -
+                ResearchGate
+              </a>
+            </li>
+            <li>
+              <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7950205/">
+                Ethics of Bioinformatics - NCBI
+              </a>
+            </li>
+            <li>
+              <a href="https://www.uib.no/en/ii/153859/ethics-bioinformatics">
+                Ethics in Bioinformatics - University of Bergen
+              </a>
             </li>
           </ul>
         </div>

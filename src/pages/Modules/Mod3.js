@@ -62,27 +62,30 @@ const Mod3 = () => {
                 <Link to="/modules/mod1">Introduction to Python</Link>
               </div>
               <div>
-                <Link to="/modules/mod2">Sequence Analysis</Link>
+                <Link to="/modules/mod2">Introduction to R</Link>
               </div>
               <div>
-                <Link to="/modules/mod3">Introduction to RNA Sequencing</Link>
+                <Link to="/modules/mod3">Sequence Analysis</Link>
               </div>
               <div>
-                <Link to="/modules/mod4">Genomic Variants</Link>
+                <Link to="/modules/mod4">Introduction to RNA Sequencing</Link>
               </div>
               <div>
-                <Link to="/modules/mod5">Evolution and Phylogenetics</Link>
+                <Link to="/modules/mod5">Genomic Variants</Link>
               </div>
               <div>
-                <Link to="/modules/mod6">Applications of Bioinformatics</Link>
+                <Link to="/modules/mod6">Evolution and Phylogenetics</Link>
               </div>
               <div>
-                <Link to="/modules/mod7">
+                <Link to="/modules/mod7">Applications of Bioinformatics</Link>
+              </div>
+              <div>
+                <Link to="/modules/mod8">
                   Machine Learning With Bioinformatics
                 </Link>
               </div>
               <div>
-                <Link to="/modules/mod8">Ethics in Bioinformatics</Link>
+                <Link to="/modules/mod9">Ethics in Bioinformatics</Link>
               </div>
             </div>
           </div>
@@ -103,7 +106,7 @@ const Mod3 = () => {
                 ></path>
               </svg>
               <div>
-                <Link to="/modules/mod2">Previous Module!</Link>
+                <Link to="/modules/mod3">Previous Module!</Link>
               </div>
             </div>
             <div className="next-module">
@@ -122,7 +125,7 @@ const Mod3 = () => {
                 ></path>
               </svg>
               <div>
-                <Link to="/modules/mod4">Next Module!</Link>
+                <Link to="/modules/mod5">Next Module!</Link>
               </div>
             </div>
           </div>

@@ -2,9 +2,9 @@ import React, { useState, useEffect, useRef } from "react";
 import "../../styles/pages_styles/module_styles/Mod1.css";
 import { Link } from "react-router-dom";
 
-const Mod1 = () => {
+const ModR = () => {
   const [videoUrl, setVideoUrl] = useState(
-    "https://www.youtube.com/embed/DKh7C-TeokU"
+    "https://www.youtube.com/embed/00QqQBcENRc"
   );
   const [active, setActive] = useState([
     true,
@@ -41,71 +41,71 @@ const Mod1 = () => {
 
   const data = [
     {
-      url: "https://www.youtube.com/embed/DKh7C-TeokU",
-      title: "Installing Python",
-      thumbnail: "https://i.ytimg.com/vi/DKh7C-TeokU/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/00QqQBcENRc",
+      title: "Introduction to R: Installation",
+      thumbnail: "https://i.ytimg.com/vi/00QqQBcENRc/hqdefault.jpg",
       number: 1,
     },
     {
-      url: "https://www.youtube.com/embed/OaCLFdPr5ZQ",
-      title: "Basic Syntax",
-      thumbnail: "https://i.ytimg.com/vi/OaCLFdPr5ZQ/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/pVzGM97b5Ig",
+      title: "Introduction to R: RStudio Overview",
+      thumbnail: "https://i.ytimg.com/vi/pVzGM97b5Ig/hqdefault.jpg",
       number: 2,
     },
     {
-      url: "https://www.youtube.com/embed/3Oc0DbhA-6Y",
-      title: "Strings",
-      thumbnail: "https://i.ytimg.com/vi/3Oc0DbhA-6Y/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/2b5tRHxDhXc",
+      title: "Introduction to R: Data Types In R",
+      thumbnail: "https://i.ytimg.com/vi/2b5tRHxDhXc/hqdefault.jpg",
       number: 3,
     },
     {
-      url: "https://www.youtube.com/embed/b-W4_bgCYbU",
-      title: "Lists",
-      thumbnail: "https://i.ytimg.com/vi/b-W4_bgCYbU/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/kwrmS1nMDc4",
+      title: "Introduction to R: Objects in R",
+      thumbnail: "https://i.ytimg.com/vi/kwrmS1nMDc4/hqdefault.jpg",
       number: 4,
     },
     {
-      url: "https://www.youtube.com/embed/p2u1_uZr1r8",
-      title: "Built-In Functions",
-      thumbnail: "https://i.ytimg.com/vi/p2u1_uZr1r8/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/ZXKTsjfIQg4",
+      title: "Introduction to R: Objects in R (Cont.)",
+      thumbnail: "https://i.ytimg.com/vi/ZXKTsjfIQg4/hqdefault.jpg",
       number: 5,
     },
     {
-      url: "https://www.youtube.com/embed/5fw6Mo4J0Dk",
-      title: "OOP in Python",
-      thumbnail: "https://i.ytimg.com/vi/5fw6Mo4J0Dk/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/VJiJchPXCuM",
+      title: "Introduction to R: Objects in R(Cont.)",
+      thumbnail: "https://i.ytimg.com/vi/VJiJchPXCuM/hqdefault.jpg",
       number: 6,
     },
     {
-      url: "https://www.youtube.com/embed/-PC7Kje6R-4",
-      title: "Control Flow",
-      thumbnail: "https://i.ytimg.com/vi/-PC7Kje6R-4/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/EG6Tcb4RWDk",
+      title: "Introduction to R: Data Management",
+      thumbnail: "https://i.ytimg.com/vi/EG6Tcb4RWDk/hqdefault.jpg",
       number: 7,
     },
     {
-      url: "https://www.youtube.com/embed/DysZI59lAlc",
-      title: "Modules",
-      thumbnail: "https://i.ytimg.com/vi/DysZI59lAlc/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/Vu5VauZdSKE",
+      title: "Introduction to R: Basic Statistical Functions",
+      thumbnail: "https://i.ytimg.com/vi/Vu5VauZdSKE/hqdefault.jpg",
       number: 8,
     },
     {
-      url: "https://www.youtube.com/embed/cTw2KrXpcVc",
-      title: "Packages",
-      thumbnail: "https://i.ytimg.com/vi/cTw2KrXpcVc/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/5Sh0V5IIkjc",
+      title: "Introduction to R: Charting",
+      thumbnail: "https://i.ytimg.com/vi/5Sh0V5IIkjc/hqdefault.jpg",
       number: 9,
     },
     {
-      url: "https://www.youtube.com/embed/H-PW_vp2_x4",
-      title: "Plotting",
-      thumbnail: "https://i.ytimg.com/vi/H-PW_vp2_x4/hqdefault.jpg",
+      url: "https://www.youtube.com/embed/vM18wYrq9bk",
+      title: "Introduction to R: Control Flow",
+      thumbnail: "https://i.ytimg.com/vi/vM18wYrq9bk/hqdefault.jpg",
       number: 10,
     },
   ];
 
   return (
-    <div className="mod1-back">
+    <>
       <div className="mod1">
-        <div className="card-mod2">
+        <div className="card-mod1">
           <div className="circles">
             <div className="c"></div>
             <div className="c"></div>
@@ -130,7 +130,7 @@ const Mod1 = () => {
                   transform="translate(0.003 0)"
                 ></path>
               </svg>
-              Introduction to Python
+              Introduction to R
               <div
                 className="dropdown"
                 style={{ display: `${isClicked ? "block" : "none"}` }}
@@ -186,7 +186,7 @@ const Mod1 = () => {
                   ></path>
                 </svg>
                 <div>
-                  <Link to="/">Previous Module!</Link>
+                  <Link to="/modules/mod1">Previous Module!</Link>
                 </div>
               </div>
               <div className="next-module">
@@ -205,12 +205,11 @@ const Mod1 = () => {
                   ></path>
                 </svg>
                 <div>
-                  <Link to="/modules/mod2">Next Module!</Link>
+                  <Link to="/modules/mod3">Next Module!</Link>
                 </div>
               </div>
             </div>
           </div>
-
           <div className="video-player">
             <iframe
               src={videoUrl}
@@ -227,13 +226,13 @@ const Mod1 = () => {
                     <p>
                       Click
                       <a
-                        href="https://colab.research.google.com/github/hari-p02/compgbi-bioinformatics-notebooks/blob/master/Introduction_to_Python%20(2).ipynb"
+                        href="https://github.com/hari-p02/compgbi-bioinformatics-notebooks/blob/master/main.pdf"
                         rel="noreferrer"
                         target="_blank"
                       >
                         &nbsp;here&nbsp;
                       </a>
-                      to access the Google
+                      to access the file pdf
                     </p>{" "}
                     <p>Collab Notebook used in the videos!</p>
                   </p>
@@ -274,8 +273,8 @@ const Mod1 = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
-export default Mod1;
+export default ModR;
