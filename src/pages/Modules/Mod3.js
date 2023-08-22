@@ -334,8 +334,17 @@ const Mod3 = () => {
             conditions or diseases. This algorithm helps us unlock important
             information about genes and their roles in biology and medicine.
             Access the Google Colaboratory notebook below to begin the activity.
-            Embed Burrows-Wheeler Alignment Activity:{" "}
-            <a href="/">google colab notebook</a>
+          </p>
+          <p>
+            Burrows-Wheeler Alignment Activity:
+            <a
+              href="https://colab.research.google.com/github/hari-p02/compgbi-bioinformatics-notebooks/blob/master/RNA%20Programming%20BWA%20activity.ipynb"
+              rel="noreferrer"
+              target="_blank"
+            >
+              {" "}
+              Google Colab Notebook
+            </a>
           </p>
           <h2>Learn More</h2>
           <div className="text-video">
