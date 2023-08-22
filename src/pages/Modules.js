@@ -21,7 +21,7 @@ const Modules = () => {
       bgkfrom: "#B5E2FA",
       bkgto: "#F9F7F3",
       ref: "mod2",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, <span>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint <span>occaecat cupidatat non proident, sunt in culpa qui officia deserunt</span> mollit anim id est laborum.",
+      desc: "Offers a deep dive into the world of data analysis and visualization. Beginning with the fundamentals, <span>students will grasp the R language syntax, establishing a solid foundation.</span> The course unfolds to cover <span>data structures and data manipulation techniques, ensuring learners harness the full power of R.</span> Visualization techniques using popular packages will empower students to present data meaningfully.",
     },
     {
       moduleNum: "3",
@@ -31,7 +31,7 @@ const Modules = () => {
       bgkfrom: "#ff85ec",
       bkgto: "#84ff98",
       ref: "mod3",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, <span>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint <span>occaecat cupidatat non proident, sunt in culpa qui officia deserunt</span> mollit anim id est laborum.",
+      desc: "Module 3 delves into the fascinating journey of genomic sequencing technologies, <span>tracing its evolution from its inception in the mid-1970s to its current state-of-the-art methods.</span> A significant portion is dedicated <span>to hands-on activities, emphasizing the pivotal computational task of sequence alignment.</span> By the end of this module, learners will be adept in aligning genetic sequences using modern tools, paving the way for meaningful biological insights and discoveries.",
     },
     {
       moduleNum: "4",
@@ -41,7 +41,7 @@ const Modules = () => {
       bgkfrom: "#ebadb6",
       bkgto: "#aceae1",
       ref: "mod4",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, <span>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint <span>occaecat cupidatat non proident, sunt in culpa qui officia deserunt</span> mollit anim id est laborum.",
+      desc: "RNA-sequencing allows scientists to analyze RNA types and quantities in samples, providing insights into gene function. RNA extraction is a crucial step in this process. The module explores <span>RNA sequencing applications, including understanding gene and protein expression and using the Burrows-Wheeler Aligner with Python</span> for efficient DNA sequencing.",
     },
     {
       moduleNum: "5",
@@ -51,7 +51,7 @@ const Modules = () => {
       bgkfrom: "#ED6B86",
       bkgto: "#FAB3A9",
       ref: "mod5",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, <span>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint <span>occaecat cupidatat non proident, sunt in culpa qui officia deserunt</span> mollit anim id est laborum.",
+      desc: "Explore genomic variants, detailing genetic variations in humans and their analysis via bioinformatics. It discusses <span>how genetic divergence in humans results from factors like isolation, leading to diverse allele frequencies.</span> The module differentiates between somatic and germline variants, noting somatic's role in cancer. It also highlights bioinformatics <span>tools for variant detection</span> and the significance of comparing DNA to reference genomes.",
     },
     {
       moduleNum: "6",
@@ -61,7 +61,7 @@ const Modules = () => {
       bgkfrom: "#EC0B43",
       bkgto: "#7AE7C7",
       ref: "mod6",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, <span>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint <span>occaecat cupidatat non proident, sunt in culpa qui officia deserunt</span> mollit anim id est laborum.",
+      desc: "Dive into computational phylogenetics, tracing from Darwin's theories to current bioinformatics. Students will explore the <span>phylogenetic tree's role in deciphering evolutionary relationships, discern true homologies, and grasp the practicality of tree estimation in various studies, including epidemiology.</span> The module also delves into computational techniques and principles in phylogenetics, supplemented by interactive resources for a comprehensive understanding.",
     },
     {
       moduleNum: "7",
@@ -71,7 +71,7 @@ const Modules = () => {
       bgkfrom: "#678D58",
       bkgto: "#44FFD2",
       ref: "mod7",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, <span>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint <span>occaecat cupidatat non proident, sunt in culpa qui officia deserunt</span> mollit anim id est laborum.",
+      desc: "Module 7 delves into bioinformatics, highlighting its critical applications in medicine and biology. By merging biology with computer science, bioinformatics utilizes computational tools for in-depth biological data analysis. The module covers its <span>impact on personalized medicine, disease research, gene therapy, and more, offering students a comprehensive view through real-world examples</span> like CRISPR-Cas9 gene editing and cancer genetics.",
     },
     {
       moduleNum: "8",

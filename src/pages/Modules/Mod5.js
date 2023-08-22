@@ -132,10 +132,33 @@ const Mod5 = () => {
           </div>
         </div>
         <div className="text-content">
-          <h1>Module 5: Evolution and Phylogenetics</h1>
+          <h1>Module 6: Evolution and Phylogenetics</h1>
+          <h2>Outline</h2>
+          <p>
+            This module will introduce the student to how evolution is studied
+            in bioinformatics through the field of computational phylogenetics.
+            From Darwin to the present, the student will gain an overview of the
+            various principles and theories that drive the field.
+          </p>
+          <h2>Learning Objectives</h2>
+          <ol>
+            <li>
+              Form the groundwork for studying evolution through evolutionary
+              trees and why they are important to estimate in practice.
+            </li>
+            <li>
+              Understand the main algorithms for reconstructing evolutionary
+              trees using biological data and how trees are depicted differently
+              depending on the evolutionary model.
+            </li>
+            <li>
+              Be able to compute phylogenetic trees in practice with only basic
+              coding abilities.
+            </li>
+          </ol>
           <h2>Introduction</h2>
           <p>
-            From the Greek words 'phylo', meaning tribe, and 'genetics', meaning
+            From the Greek words ‘phylo’, meaning tribe, and ‘genetics’, meaning
             origin, the field of phylogenetics is the study of the evolutionary
             relationships among a group of biological entities. This field of
             study is particularly important in understanding the origins and
@@ -144,7 +167,7 @@ const Mod5 = () => {
           </p>
           <p>
             One of the key tools used in phylogenetics is the phylogenetic or
-            evolutionary tree. You're already familiar with evolutionary trees
+            evolutionary tree. You’re already familiar with evolutionary trees
             to some extent, but perhaps you did not know that reconstructing
             evolutionary trees is a core pillar of computational phylogenetics.
             Evolutionary trees are data structures used to describe the
@@ -159,7 +182,7 @@ const Mod5 = () => {
             <img alt="Phylogenetic Tree" src="/images/mod6imgs/first.png" />
           </p>
           <p>
-            So how do we determine how closely related two entities are? Let's
+            So how do we determine how closely related two entities are? Let’s
             start with something familiar in comparing species. We can compare
             all the physical characteristics of each species and see to what
             degree those characteristics are shared. For example, both humans
@@ -168,7 +191,7 @@ const Mod5 = () => {
             bears.
           </p>
           <p>
-            In this case, it's fairly obvious that this line of thinking is
+            In this case, it’s fairly obvious that this line of thinking is
             correct. But will this always be the case? Short answer: no. One
             important distinction to make in phylogenetics is the difference
             between similarity and homology. Here, homology refers to the degree
@@ -191,7 +214,9 @@ const Mod5 = () => {
             sophisticated computational methods to infer the most likely
             evolutionary relationships among different entities.
           </p>
-          <h2>1.1 Why estimate evolutionary trees?</h2>
+          <h3>
+            <strong>Why estimate evolutionary trees?</strong>
+          </h3>
           <p>
             Many researchers are interested in the evolutionary origins of
             humans and other species for its own sake, but outside of simple
@@ -248,7 +273,7 @@ const Mod5 = () => {
             bioinformatics is an essential field for advancing our understanding
             of evolutionary relationships.
           </p>
-          <h2>Phylogenetic Inference</h2>
+          <h2>Phylogenetic inference</h2>
           <p>
             The field of phylogenetics was born when Charles Darwin published
             his book "On the Origin of Species," in 1859. This pioneering work
@@ -278,7 +303,9 @@ const Mod5 = () => {
             the mechanisms of evolution and the relationships between different
             species. And this happens all the time!
           </p>
-          <h3>2.1 Large Scale Phylogeny Estimation</h3>
+          <h3>
+            <strong>Large Scale Phylogeny Estimation</strong>
+          </h3>
           <p>
             With the wealth of biological data available to researchers,
             computational phylogenetics has become increasingly relevant. The
@@ -299,20 +326,23 @@ const Mod5 = () => {
             The most up to date ToL was built using DNA sequence data,
             morphological data, other types of biological data. The resulting
             tree relates all life forms, both past, present, and extinct,
-            throughout time. In the following activity, you're going to explore
+            throughout time. In the following activity, you’re going to explore
             the tree of life.
           </p>
           <p>
             The following link will take you to a web project that allows users
-            to explore the tree of life: http://tolweb.org/tree/phylogeny.html
+            to explore the tree of life:{" "}
+            <a href="http://tolweb.org/tree/phylogeny.html">
+              http://tolweb.org/tree/phylogeny.html
+            </a>
           </p>
           <p>
-            Click on 'Root of the Tree'. This is the starting point from which
+            Click on ‘Root of the Tree’. This is the starting point from which
             all life evolved. Explore the tree by clicking on the various
             descendant lineages. As a challenge, try to navigate to humans from
             the root by selecting the correct lineages.
           </p>
-          <h3>2.2 Evolutionary models</h3>
+          <h3>Evolutionary models</h3>
           <div className="text-video">
             <iframe
               src="https://www.youtube.com/embed/q0qUKG0NkJs"
@@ -346,17 +376,17 @@ const Mod5 = () => {
             categories of algorithms that are used for inferring phylogenetic
             trees. These are:
           </p>
-          <ul>
+          <ol>
             <li>
-              <strong>Distance-based methods</strong>. These methods estimate
-              the 'evolutionary distance' between each pair of entities, usually
+              <strong>Distance-based methods.</strong> These methods estimate
+              the ‘evolutionary distance’ between each pair of entities, usually
               based on the number of molecular changes between the two. One
               example is the Hamming distance used in the sequence analysis
               activity. A drawback of distance-based methods is that they
               struggle to accurately quantify distant relationships.
             </li>
             <li>
-              <strong>Maximum Parsimony</strong>. Suppose we have DNA sequences
+              <strong>Maximum Parsimony.</strong> Suppose we have DNA sequences
               from two closely related species. Any differences can be explained
               by some number of mutations, or evolutionary events. Maximum
               Parsimony, or MP, is an approach that minimizes the number of
@@ -367,7 +397,7 @@ const Mod5 = () => {
               events, and could therefore underestimate the true number.
             </li>
             <li>
-              <strong>Maximum Likelihood</strong>. Imagine before looking at the
+              <strong>Maximum Likelihood.</strong> Imagine before looking at the
               data, you randomly guess what the phylogenetic tree looks like.
               Maximum Likelihood, or ML, computes the probability that the
               guessed tree is the correct one given the observed data. These
@@ -378,14 +408,14 @@ const Mod5 = () => {
               computationally infeasible.
             </li>
             <li>
-              <strong>Bayesian Inference</strong>. These methods combine
+              <strong>Bayesian Inference.</strong> These methods combine
               observed data with expert information to generate a distribution
               of possible trees, with each tree having a probability of being
               the true evolutionary relationships. Then, the highest probability
               tree is selected. One challenge with Bayesian Inference methods is
               that they require high quality expert knowledge to be effective.
             </li>
-          </ul>
+          </ol>
           <p>
             This classification can be combined even further: categories 3 and 4
             are probabilistic methods, whereas categories 1 and 2 are
@@ -395,26 +425,68 @@ const Mod5 = () => {
           </p>
           <p>
             Now that you have a basic idea of inferring phylogenetic trees,
-            let's try it out in practice.
+            let’s try it out in practice.
           </p>
-          <h3>3.1 Computing phylogenetic trees coding activity</h3>
-          <p>See python script.</p>
-          <h2>Learn More</h2>
+          <h2>
+            <strong>Computing phylogenetic trees coding activity</strong>
+          </h2>
           <p>
-            <h3>Intro to computational phylogenetics textbook pages:</h3>
+            In this activity, your task will be to compute phylogenetic trees
+            using various reconstruction algorithms on data derived form
+            sequences. You will then apply these algorithms to study the
+            evolutionary relationships between individuals of the common
+            iceplant.
+          </p>
+          <p>
+            <strong>
+              Click here to access activity materials:{" "}
+              <a href="https://drive.google.com/drive/u/1/folders/16ktFf9U7UrqevhuD4wAiLrauYcwnAI1t">
+                https://drive.google.com/drive/u/1/folders/16ktFf9U7UrqevhuD4wAiLrauYcwnAI1t
+              </a>
+            </strong>
+          </p>
+          <h2>Learn more</h2>
+          <h3>
+            <strong>
+              Intro to computational phylogenetics textbook pages:
+            </strong>
+          </h3>
+          <p>
             <a href="https://www.cs.utexas.edu/~tandy/394C-2013-textbook.pdf">
-              https://www.cs.utexas.edu/~tandy/394C-2013-textbook.pdf{" "}
+              https://www.cs.utexas.edu/~tandy/394C-2013-textbook.pdf
             </a>
-            <h3>Building phylogenetic trees methods:</h3>
+          </p>
+          <h3>
+            <strong>Building phylogenetic trees methods:</strong>
+          </h3>
+          <p>
             <a href="https://guava.physics.uiuc.edu/~nigel/courses/598BIO/498BIOonline-essays/hw2/files/hw2_li.pdf">
-              https://guava.physics.uiuc.edu/~nigel/courses/598BIO/498BIOonline-essays/hw2/files/hw2_li.pdf{" "}
+              https://guava.physics.uiuc.edu/~nigel/courses/598BIO/498BIOonline-essays/hw2/files/hw2_li.pdf
             </a>
-            <h3>
-              Popular suite of computational tools for inferring phylogenies:{" "}
-            </h3>
+          </p>
+          <h3>
+            <strong>
+              Popular suite of computational tools for inferring phylogenies:
+            </strong>
+          </h3>
+          <p>
             <a href="https://evolution.genetics.washington.edu/phylip.html">
               https://evolution.genetics.washington.edu/phylip.html
             </a>
+          </p>
+          <h2>Citations</h2>
+          <p>
+            Young, Scott. <em>Evolution by Natural Selection.</em> July, 2019.
+            https://www.scotthyoung.com/blog/2019/07/02/natural-selection/
+          </p>
+          <p>
+            Pennisi, Elizabeth. “First Comprehensive Tree of Life Shows How
+            Related You Are to Millions of Species.”{" "}
+            <a href="http://science.org/">Science.org</a>, Sept. 21AD,{" "}
+            <a href="http://www.science.org/content/article/first-comprehensive-tree-life-shows-how-related-you-are-millions-species">
+              www.science.org/content/article/first-comprehensive-tree-life-shows-how-related-you-are-millions-species
+            </a>
+            .
           </p>
         </div>
       </div>
