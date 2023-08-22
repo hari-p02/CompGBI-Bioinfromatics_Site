@@ -211,14 +211,48 @@ const ModR = () => {
             </div>
           </div>
           <div className="video-player">
-            <iframe
-              src={videoUrl}
-              title="placeholder"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              id="video"
-              style={{ borderRadius: "5px", border: "none", width: "100%" }}
-            ></iframe>
+            <div className="video">
+              <div className="content">
+                <h1>Module 2: Introduction to R</h1>
+                <p>
+                  Welcome to Module 2! In addition to Python, R stands as a
+                  formidable language frequently employed for data-intensive
+                  tasks, especially in fields like bioinformatics. Throughout
+                  this module, you'll grasp the fundamentals of R, from
+                  declaring basic data types to harnessing specialized libraries
+                  tailored for genomic datasets. Let's dive in!
+                </p>
+                <h2>Learning Objectives</h2>
+                <p>By the end of this module, you should be able to:</p>
+                <ol>
+                  <li>
+                    Differentiate and manipulate R's primary data structures
+                    (vectors, matrices, data frames, lists), and handle data
+                    type coercion and missing values.
+                  </li>
+                  <li>
+                    Create basic plots using R's base graphics, customize visual
+                    details, and introduce the principles and syntax of the
+                    ggplot2 package for advanced visualization.
+                  </li>
+                  <li>Understand how to manipulate data using R data types</li>
+                </ol>
+              </div>
+
+              <iframe
+                src={videoUrl}
+                title="placeholder"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                id="video"
+                style={{
+                  borderRadius: "5px",
+                  border: "none",
+                  width: "100%",
+                  height: "100%",
+                }}
+              ></iframe>
+            </div>
             <div className="players">
               <div class="info-code">
                 <div className="code-link">

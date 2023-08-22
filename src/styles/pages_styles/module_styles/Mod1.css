@@ -74,6 +74,7 @@
   color: rgb(88, 88, 88);
   box-shadow: inset 2px 2px 2px #05050525;
   cursor: pointer;
+  font-size: 15px;
 }
 
 .search-bar svg {
@@ -99,6 +100,65 @@
 
 .video-player .players {
   margin-left: 20px;
+}
+
+.video {
+  /* border: 3px solid #73ad21; */
+  width: 100%;
+  height: 400px;
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  ::-webkit-scrollbar {
+    height: 0;
+  }
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  /* height: 100%; */
+  /* overflow-y: hidden; */
+}
+
+.content {
+  /* border: 3px solid #73ad21; */
+  overflow: scroll;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  height: 50%;
+  margin-bottom: 20px;
+}
+
+.video .content h1 {
+  font-size: larger;
+  background-color: #8cdedc;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.video .content h2 {
+  font-size: large;
+  /* font-style: oblique; */
+  font-weight: 800;
+  background-color: #e4bfe4;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.video .content h3 {
+  font-size: medium;
+  /* font-style: oblique; */
+  font-weight: 800;
+  background-color: #f4e4f4;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.video .content p,
+.video .content li {
+  font-size: small;
+  font-weight: 200;
+  padding: 0px 15px 0 15px;
 }
 
 .players {

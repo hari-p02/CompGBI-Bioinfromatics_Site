@@ -199,14 +199,50 @@ const Mod7 = () => {
             </div>
           </div>
           <div className="video-player">
-            <iframe
-              src={videoUrl}
-              title="placeholder"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              id="video"
-              style={{ borderRadius: "5px", border: "none", width: "100%" }}
-            ></iframe>
+            <div className="video">
+              <div className="content">
+                <h1>Module 8: Machine Learning With Bioinformatics</h1>
+                <p>
+                  In this module, you'll embark on a journey into the
+                  foundational concepts of Machine Learning. With a special
+                  emphasis on a higher-level perspective, we'll delve deep into
+                  the mechanics of how models are trained and optimized. Beyond
+                  that, we'll shine a spotlight on Clustering algorithms,
+                  uncovering their intricacies and their transformative
+                  applications in the realm of bioinformatics. Together, we'll
+                  bridge the gap between theoretical concepts and real-world
+                  applications, ensuring a holistic understanding of the
+                  fascinating world of Machine Learning in bioinformatics. Let's
+                  dive in and explore the future of data-driven science!{" "}
+                </p>
+                <h2>Learning Objectives</h2>
+                <p>By the end of this module, you should be able to:</p>
+                <ol>
+                  <li>Understand the idea behind Artificial Intelligence.</li>
+                  <li>
+                    Comprehend how a classic Machine Learning algorithm is
+                    trained.
+                  </li>
+                  <li>
+                    Work with the KMeans and Mean Shift Clustering algorithms
+                  </li>
+                </ol>
+              </div>
+
+              <iframe
+                src={videoUrl}
+                title="placeholder"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                id="video"
+                style={{
+                  borderRadius: "5px",
+                  border: "none",
+                  width: "100%",
+                  height: "100%",
+                }}
+              ></iframe>
+            </div>
             <div className="players">
               <div class="info-code">
                 <div className="code-link">

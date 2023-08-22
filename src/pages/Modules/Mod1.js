@@ -212,14 +212,109 @@ const Mod1 = () => {
           </div>
 
           <div className="video-player">
-            <iframe
-              src={videoUrl}
-              title="placeholder"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              id="video"
-              style={{ borderRadius: "5px", border: "none", width: "100%" }}
-            ></iframe>
+            <div className="video">
+              <div className="content">
+                <h1>Module 1: Introduction to Python</h1>
+                <h2>Overview</h2>
+                <p>
+                  The general purpose of this module is to introduce high school
+                  students to the fundamental concepts of coding using the
+                  Python programming language. Through this module, students
+                  will embark on a journey to understand the basics of
+                  programming, develop problem-solving skills, and gain hands-on
+                  experience in writing Python code. The content of this module
+                  will be located in the google colaboratory notebook, where
+                  students can run the code provided in the videos on their own.
+                </p>
+                <h2>Learning Objectives</h2>
+                <p>By the end of this module, you should be able to:</p>
+                <ol>
+                  <li>
+                    Provide a basic understanding of programming concepts and
+                    the role of coding in various fields, including technology,
+                    science, and engineering.
+                  </li>
+                  <li>
+                    Introduce the syntax, data types, variables, and control
+                    flow structures of the Python language.
+                  </li>
+                  <li>
+                    Develop logical thinking and problem-solving abilities
+                    through coding exercises.
+                  </li>
+                </ol>
+                <h2>References</h2>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.geeksforgeeks.org/box-plot-in-python-using-matplotlib/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      “Box Plot in Python Using Matplotlib.”
+                    </a>{" "}
+                    GeeksforGeeks, 8 Mar. 2022.
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.w3schools.com/python/matplotlib_plotting.asp"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Matplotlib Plotting
+                    </a>
+                    , W3Schools.
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://realpython.com/lessons/what-is-pip-overview/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      “A Beginner's Guide to Pip (Overview).”
+                    </a>{" "}
+                    Real Python.
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.python.org/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      “Welcome to Python.org.”
+                    </a>{" "}
+                    Python.org.
+                  </li>
+
+                  <li>
+                    <a
+                      href="https://www.geeksforgeeks.org/plotting-histogram-in-python-using-matplotlib/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      “Plotting Histogram in Python Using Matplotlib.”
+                    </a>{" "}
+                    GeeksforGeeks, 22 Aug. 2022.
+                  </li>
+                </ul>
+              </div>
+              <iframe
+                src={videoUrl}
+                title="placeholder"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                id="video"
+                style={{
+                  borderRadius: "5px",
+                  border: "none",
+                  width: "100%",
+                  height: "100%",
+                }}
+              ></iframe>
+            </div>
             <div className="players">
               <div class="info-code">
                 <div className="code-link">
