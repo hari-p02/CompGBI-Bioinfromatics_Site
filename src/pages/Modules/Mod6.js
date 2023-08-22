@@ -132,7 +132,7 @@ const Mod6 = () => {
           </div>
         </div>
         <div className="text-content">
-          <h1>Module 6: Applications of Bioinformatics</h1>
+          <h1>Module 7: Applications of Bioinformatics</h1>
           <h2>Overview</h2>
           <p>
             The general purpose of this module is to introduce high school

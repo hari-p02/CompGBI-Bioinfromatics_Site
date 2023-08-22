@@ -131,7 +131,7 @@ const Mod3 = () => {
           </div>
         </div>
         <div className="text-content">
-          <h1>Module 3: RNA-sequencing</h1>
+          <h1>Module 4: RNA-sequencing</h1>
           <p>Learning Objectives</p>
           <ol>
             <li>

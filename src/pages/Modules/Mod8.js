@@ -113,7 +113,7 @@ const Mod8 = () => {
           </div>
         </div>
         <div className="text-content">
-          <h1>Module 8: Ethics in Bioinformatics</h1>
+          <h1>Module 9: Ethics in Bioinformatics</h1>
           <h2>Overview</h2>
           <p>
             The general purpose of this module is to introduce high school
