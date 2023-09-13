@@ -135,10 +135,11 @@ const Mod5 = () => {
           <h1>Module 6: Evolution and Phylogenetics</h1>
           <h2>Outline</h2>
           <p>
-            This module will introduce the student to how evolution is studied
-            in bioinformatics through the field of computational phylogenetics.
-            From Darwin to the present, the student will gain an overview of the
-            various principles and theories that drive the field.
+            &emsp;&emsp;This module will introduce the student to how evolution
+            is studied in bioinformatics through the field of computational
+            phylogenetics. From Darwin to the present, the student will gain an
+            overview of the various principles and theories that drive the
+            field.
           </p>
           <h2>Learning Objectives</h2>
           <ol>
@@ -158,69 +159,71 @@ const Mod5 = () => {
           </ol>
           <h2>Introduction</h2>
           <p>
-            From the Greek words ‘phylo’, meaning tribe, and ‘genetics’, meaning
-            origin, the field of phylogenetics is the study of the evolutionary
-            relationships among a group of biological entities. This field of
-            study is particularly important in understanding the origins and
-            relationships between different species, organisms, and even
-            individual genes and DNA sequences.
+            &emsp;&emsp;From the Greek words ‘phylo’, meaning tribe, and
+            ‘genetics’, meaning origin, the field of phylogenetics is the study
+            of the evolutionary relationships among a group of biological
+            entities. This field of study is particularly important in
+            understanding the origins and relationships between different
+            species, organisms, and even individual genes and DNA sequences.
           </p>
           <p>
-            One of the key tools used in phylogenetics is the phylogenetic or
-            evolutionary tree. You’re already familiar with evolutionary trees
-            to some extent, but perhaps you did not know that reconstructing
-            evolutionary trees is a core pillar of computational phylogenetics.
-            Evolutionary trees are data structures used to describe the
-            evolutionary relationships between different biological entities.
-            These entities can take many forms, such as different species,
-            organisms within species, individual genes and DNA sequences, and
-            even entire microbial communities or cells. If two entities are
-            grouped closely together on an evolutionary tree, that means they
-            are more closely related compared to the other entities represented.
+            &emsp;&emsp;One of the key tools used in phylogenetics is the
+            phylogenetic or evolutionary tree. You’re already familiar with
+            evolutionary trees to some extent, but perhaps you did not know that
+            reconstructing evolutionary trees is a core pillar of computational
+            phylogenetics. Evolutionary trees are data structures used to
+            describe the evolutionary relationships between different biological
+            entities. These entities can take many forms, such as different
+            species, organisms within species, individual genes and DNA
+            sequences, and even entire microbial communities or cells. If two
+            entities are grouped closely together on an evolutionary tree, that
+            means they are more closely related compared to the other entities
+            represented.
           </p>
           <p className="text-image">
             <img alt="Phylogenetic Tree" src="/images/mod6imgs/first.png" />
           </p>
           <p>
-            So how do we determine how closely related two entities are? Let’s
-            start with something familiar in comparing species. We can compare
-            all the physical characteristics of each species and see to what
-            degree those characteristics are shared. For example, both humans
-            and chimpanzees have opposable thumbs, but bears do not, therefore
-            humans and chimpanzees are more closely related than they are to
-            bears.
+            &emsp;&emsp;So how do we determine how closely related two entities
+            are? Let’s start with something familiar in comparing species. We
+            can compare all the physical characteristics of each species and see
+            to what degree those characteristics are shared. For example, both
+            humans and chimpanzees have opposable thumbs, but bears do not,
+            therefore humans and chimpanzees are more closely related than they
+            are to bears.
           </p>
           <p>
-            In this case, it’s fairly obvious that this line of thinking is
-            correct. But will this always be the case? Short answer: no. One
-            important distinction to make in phylogenetics is the difference
-            between similarity and homology. Here, homology refers to the degree
-            of shared ancestry. While significant similarity between two
-            entities is often strong evidence for homology, this is not always
-            the case. In some instances, two entities may appear similar due to
-            mechanisms such as parallelism or convergent evolution, a phenomenon
-            known as homoplasy. As an example, consider whales, dolphins, and
-            other cetaceans. They have many features that would suggest they are
-            far more closely related to fish than us - slick skin meant for
-            living in water, and fins for moving around in it. And yet, based on
-            sequence data, humans are more closely related to whales and
-            dolphins than they are elephants.
+            &emsp;&emsp;In this case, it’s fairly obvious that this line of
+            thinking is correct. But will this always be the case? Short answer:
+            no. One important distinction to make in phylogenetics is the
+            difference between similarity and homology. Here, homology refers to
+            the degree of shared ancestry. While significant similarity between
+            two entities is often strong evidence for homology, this is not
+            always the case. In some instances, two entities may appear similar
+            due to mechanisms such as parallelism or convergent evolution, a
+            phenomenon known as homoplasy. As an example, consider whales,
+            dolphins, and other cetaceans. They have many features that would
+            suggest they are far more closely related to fish than us - slick
+            skin meant for living in water, and fins for moving around in it.
+            And yet, based on sequence data, humans are more closely related to
+            whales and dolphins than they are elephants.
           </p>
           <p>
-            This leads to the fundamental challenge of phylogenetics: because
-            evolutionary histories can never be known with certainty (since they
-            happened in the past and cannot be observed directly), they must be
-            estimated. This requires careful analysis of the available data and
-            sophisticated computational methods to infer the most likely
-            evolutionary relationships among different entities.
+            &emsp;&emsp;This leads to the fundamental challenge of
+            phylogenetics: because evolutionary histories can never be known
+            with certainty (since they happened in the past and cannot be
+            observed directly), they must be estimated. This requires careful
+            analysis of the available data and sophisticated computational
+            methods to infer the most likely evolutionary relationships among
+            different entities.
           </p>
           <h3>
             <strong>Why estimate evolutionary trees?</strong>
           </h3>
           <p>
-            Many researchers are interested in the evolutionary origins of
-            humans and other species for its own sake, but outside of simple
-            curiosity, are there any practical reasons for estimating
+            &emsp;&emsp;Many researchers are interested in the evolutionary
+            origins of humans and other species for its own sake, but outside of
+            simple curiosity, are there any practical reasons for estimating
             evolutionary trees? Of course! There are many reasons why estimating
             phylogenetic trees is important in biology and other fields. Some of
             the key reasons include:
@@ -257,8 +260,8 @@ const Mod5 = () => {
             </li>
           </ul>
           <p>
-            So why does phylogenetics belong in bioinformatics? In the current
-            age of big data, phylogenetic estimation is considered a
+            &emsp;&emsp;So why does phylogenetics belong in bioinformatics? In
+            the current age of big data, phylogenetic estimation is considered a
             computational problem. Simply put, phylogenetics has grown hand in
             hand with bioinformatics, and the process of estimating evolutionary
             trees is a complex statistical inference problem that requires the
@@ -275,72 +278,75 @@ const Mod5 = () => {
           </p>
           <h2>Phylogenetic inference</h2>
           <p>
-            The field of phylogenetics was born when Charles Darwin published
-            his book "On the Origin of Species," in 1859. This pioneering work
-            laid the foundations for how we study evolution to this day.
-            Darwinian evolution is the process by which species evolve over time
-            through a process of natural selection, and has come to dominate how
-            we think about the underlying mechanisms that drive change.
+            &emsp;&emsp;The field of phylogenetics was born when Charles Darwin
+            published his book "On the Origin of Species," in 1859. This
+            pioneering work laid the foundations for how we study evolution to
+            this day. Darwinian evolution is the process by which species evolve
+            over time through a process of natural selection, and has come to
+            dominate how we think about the underlying mechanisms that drive
+            change.
           </p>
           <p>
-            Since the time of Darwin, we have learned a great deal about the
-            mechanisms of evolution and how different species are related to one
-            another. However, our understanding of the evolutionary history of
-            life on Earth is still incomplete, and there is much that we do not
-            yet know.
+            &emsp;&emsp;Since the time of Darwin, we have learned a great deal
+            about the mechanisms of evolution and how different species are
+            related to one another. However, our understanding of the
+            evolutionary history of life on Earth is still incomplete, and there
+            is much that we do not yet know.
           </p>
           <p>
-            One of the ways that we attempt to capture the complexity of
-            evolution is by constructing evolutionary trees. These trees are not
-            definitive proof of what happened in the past, but rather they are
-            hypotheses of what might have happened based on the available data
-            and the assumptions we make about how species evolved. Unless the
-            time machine is invented, they will forever be theories and not
-            proven. In other words, evolutionary trees are simply one way of
-            representing our current understanding of the evolutionary history
-            of life on Earth. They are not definitive answers, but rather they
-            are hypotheses that can be tested and refined as we learn more about
-            the mechanisms of evolution and the relationships between different
-            species. And this happens all the time!
+            &emsp;&emsp;One of the ways that we attempt to capture the
+            complexity of evolution is by constructing evolutionary trees. These
+            trees are not definitive proof of what happened in the past, but
+            rather they are hypotheses of what might have happened based on the
+            available data and the assumptions we make about how species
+            evolved. Unless the time machine is invented, they will forever be
+            theories and not proven. In other words, evolutionary trees are
+            simply one way of representing our current understanding of the
+            evolutionary history of life on Earth. They are not definitive
+            answers, but rather they are hypotheses that can be tested and
+            refined as we learn more about the mechanisms of evolution and the
+            relationships between different species. And this happens all the
+            time!
           </p>
           <h3>
             <strong>Large Scale Phylogeny Estimation</strong>
           </h3>
           <p>
-            With the wealth of biological data available to researchers,
-            computational phylogenetics has become increasingly relevant. The
-            pace at which computing resources grow cannot match the pace of the
-            scale of datasets, so to compensate, better algorithms must be
-            developed constantly. You have probably heard of the tree of life:
-            the ultimate phylogenetic tree relating all life forms on Earth. In
-            recent years, the Tree of Life (ToL) has continued to be shifted and
-            refined in tremendous ways, almost entirely due to the introduction
-            of sequencing data to the field. Recall the hierarchical taxonomy
-            used to classify species: Kingdom, Phylum, Class, Order, ect… This
-            system has likely changed since you learned about it last!
+            &emsp;&emsp;With the wealth of biological data available to
+            researchers, computational phylogenetics has become increasingly
+            relevant. The pace at which computing resources grow cannot match
+            the pace of the scale of datasets, so to compensate, better
+            algorithms must be developed constantly. You have probably heard of
+            the tree of life: the ultimate phylogenetic tree relating all life
+            forms on Earth. In recent years, the Tree of Life (ToL) has
+            continued to be shifted and refined in tremendous ways, almost
+            entirely due to the introduction of sequencing data to the field.
+            Recall the hierarchical taxonomy used to classify species: Kingdom,
+            Phylum, Class, Order, ect… This system has likely changed since you
+            learned about it last!
           </p>
           <p className="text-image">
             <img alt="taxonomy" src="/images/mod6imgs/second.png" />
           </p>
           <p>
-            The most up to date ToL was built using DNA sequence data,
-            morphological data, other types of biological data. The resulting
-            tree relates all life forms, both past, present, and extinct,
-            throughout time. In the following activity, you’re going to explore
-            the tree of life.
+            &emsp;&emsp;The most up to date ToL was built using DNA sequence
+            data, morphological data, other types of biological data. The
+            resulting tree relates all life forms, both past, present, and
+            extinct, throughout time. In the following activity, you’re going to
+            explore the tree of life.
           </p>
           <p>
-            The following link will take you to a web project that allows users
-            to explore the tree of life:{" "}
+            &emsp;&emsp;The following link will take you to a web project that
+            allows users to explore the tree of life:{" "}
             <a href="http://tolweb.org/tree/phylogeny.html">
               http://tolweb.org/tree/phylogeny.html
             </a>
           </p>
           <p>
-            Click on ‘Root of the Tree’. This is the starting point from which
-            all life evolved. Explore the tree by clicking on the various
-            descendant lineages. As a challenge, try to navigate to humans from
-            the root by selecting the correct lineages.
+            &emsp;&emsp;Click on ‘Root of the Tree’. This is the starting point
+            from which all life evolved. Explore the tree by clicking on the
+            various descendant lineages. As a challenge, try to navigate to
+            humans from the root by selecting the correct lineages.
           </p>
           <h3>Evolutionary models</h3>
           <div className="text-video">
@@ -360,10 +366,10 @@ const Mod5 = () => {
           </div>
           <h2>Molecular Phylogenetics</h2>
           <p>
-            Molecular Phylogenetics is the branch of evolutionary biology that
-            uses molecular data, such as DNA and protein sequences, to infer
-            evolutionary relationships among species. It provides a powerful
-            tool for understanding the history of life on earth and how
+            &emsp;&emsp;Molecular Phylogenetics is the branch of evolutionary
+            biology that uses molecular data, such as DNA and protein sequences,
+            to infer evolutionary relationships among species. It provides a
+            powerful tool for understanding the history of life on earth and how
             different species are related to one another. By comparing the
             molecular data of different species, molecular phylogenetics helps
             us to reconstruct evolutionary trees that show the ancestry and
@@ -371,10 +377,10 @@ const Mod5 = () => {
             evolved and diversified over time.
           </p>
           <p>
-            As mentioned earlier, reconstructing phylogenetic trees is a
-            computational problem when using molecular data. There are several
-            categories of algorithms that are used for inferring phylogenetic
-            trees. These are:
+            &emsp;&emsp;As mentioned earlier, reconstructing phylogenetic trees
+            is a computational problem when using molecular data. There are
+            several categories of algorithms that are used for inferring
+            phylogenetic trees. These are:
           </p>
           <ol>
             <li>
@@ -417,25 +423,25 @@ const Mod5 = () => {
             </li>
           </ol>
           <p>
-            This classification can be combined even further: categories 3 and 4
-            are probabilistic methods, whereas categories 1 and 2 are
-            combinatorial. As each approach comes with its own pros and cons,
-            the first challenge of phylogenetic inference is selecting the best
-            one.
+            &emsp;&emsp;This classification can be combined even further:
+            categories 3 and 4 are probabilistic methods, whereas categories 1
+            and 2 are combinatorial. As each approach comes with its own pros
+            and cons, the first challenge of phylogenetic inference is selecting
+            the best one.
           </p>
           <p>
-            Now that you have a basic idea of inferring phylogenetic trees,
-            let’s try it out in practice.
+            &emsp;&emsp;Now that you have a basic idea of inferring phylogenetic
+            trees, let’s try it out in practice.
           </p>
           <h2>
             <strong>Computing phylogenetic trees coding activity</strong>
           </h2>
           <p>
-            In this activity, your task will be to compute phylogenetic trees
-            using various reconstruction algorithms on data derived form
-            sequences. You will then apply these algorithms to study the
-            evolutionary relationships between individuals of the common
-            iceplant.
+            &emsp;&emsp;In this activity, your task will be to compute
+            phylogenetic trees using various reconstruction algorithms on data
+            derived form sequences. You will then apply these algorithms to
+            study the evolutionary relationships between individuals of the
+            common iceplant.
           </p>
           <p>
             <strong>
