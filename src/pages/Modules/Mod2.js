@@ -342,10 +342,10 @@ const Mod2 = () => {
                 keywords of interest. For example, ‘homo sapien[Organism]
                 russia’. Click the search button.
               </p>
-              <p>
+              <p className="text-image">
                 <img
                   alt="Screen Shot 2023-07-30 at 4.11.16 PM.png"
-                  src="Module%203%20846e31781e984722811d30cc6e191679/Screen_Shot_2023-07-30_at_4.11.16_PM.png"
+                  src="/images/mod3imgs/Screen_Shot_2023-07-30_at_4.11.16_PM.png"
                 />
               </p>
             </li>
@@ -354,10 +354,10 @@ const Mod2 = () => {
                 On the left-hand side, make sure to select the filters ‘public’
                 and ‘DNA’.
               </p>
-              <p>
+              <p className="text-image">
                 <img
                   alt="Screen Shot 2023-07-30 at 4.13.24 PM.png"
-                  src="Module%203%20846e31781e984722811d30cc6e191679/Screen_Shot_2023-07-30_at_4.13.24_PM.png"
+                  src="/images/mod3imgs/Screen_Shot_2023-07-30_at_4.13.24_PM.png"
                 />
               </p>
             </li>
@@ -369,10 +369,10 @@ const Mod2 = () => {
                 Towards the bottom of the page, you should see a table called
                 ‘Runs’. Click on one of the underlined run ids.
               </p>
-              <p>
+              <p className="text-image">
                 <img
                   alt="Screen Shot 2023-07-30 at 4.15.03 PM.png"
-                  src="Module%203%20846e31781e984722811d30cc6e191679/Screen_Shot_2023-07-30_at_4.15.03_PM.png"
+                  src="/images/mod3imgs/Screen_Shot_2023-07-30_at_4.15.03_PM.png"
                 />
               </p>
             </li>
@@ -382,10 +382,10 @@ const Mod2 = () => {
                 sequences. If the page says ‘No spots were found’, go back and
                 try another result, or try a different key word.
               </p>
-              <p>
+              <p className="text-image">
                 <img
                   alt="Screen Shot 2023-07-30 at 4.16.09 PM.png"
-                  src="Module%203%20846e31781e984722811d30cc6e191679/Screen_Shot_2023-07-30_at_4.16.09_PM.png"
+                  src="/images/mod3imgs/Screen_Shot_2023-07-30_at_4.16.09_PM.png"
                 />
               </p>
             </li>
@@ -416,10 +416,10 @@ const Mod2 = () => {
                 In the toolbar, click on tools → BLAT. This is the alignment
                 software.
               </p>
-              <p>
+              <p className="text-image">
                 <img
                   alt="Screen Shot 2023-07-30 at 4.17.50 PM.png"
-                  src="Module%203%20846e31781e984722811d30cc6e191679/Screen_Shot_2023-07-30_at_4.17.50_PM.png"
+                  src="/images/mod3imgs/Screen_Shot_2023-07-30_at_4.17.50_PM.png"
                 />
               </p>
             </li>
@@ -440,10 +440,10 @@ const Mod2 = () => {
                 snippet you picked out and paste it into the text box on the
                 BLAT Search Genome page. Click submit.
               </p>
-              <p>
+              <p className="text-image">
                 <img
                   alt="Screen Shot 2023-07-30 at 4.20.09 PM.png"
-                  src="Module%203%20846e31781e984722811d30cc6e191679/Screen_Shot_2023-07-30_at_4.20.09_PM.png"
+                  src="/images/mod3imgs/Screen_Shot_2023-07-30_at_4.20.09_PM.png"
                 />
               </p>
             </li>
