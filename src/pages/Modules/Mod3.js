@@ -132,7 +132,15 @@ const Mod3 = () => {
         </div>
         <div className="text-content">
           <h1>Module 4: RNA-sequencing</h1>
-          <p>Learning Objectives</p>
+          <h2>Overview</h2>
+          <p>
+            The general purpose of this module is to introduce high school
+            students to the exciting world of RNA sequencing, a powerful
+            technique used in molecular biology to study gene expression.
+            Through this module, students will gain a fundamental understanding
+            of RNA sequencing and its applications.
+          </p>
+          <h2>Learning Objectives</h2>
           <ol>
             <li>
               <p>Define RNA-sequencing.</p>
@@ -158,7 +166,7 @@ const Mod3 = () => {
               </p>
             </li>
           </ol>
-          <h1>Introduction to RNA Sequencing</h1>
+          <h2>Introduction to RNA Sequencing</h2>
           <p>
             &emsp;&emsp; What is RNA sequencing? RNA sequencing is a powerful
             technique that scientists use to explore the important information
@@ -196,7 +204,7 @@ const Mod3 = () => {
             blueprint, the RNA. The YouTube video below will teach you how to
             perform an RNA extraction.
           </p>
-          <div className="text-video">
+          {/* <div className="text-video">
             <iframe
               src="https://www.youtube.com/embed/IIpcwN7BWZg"
               title="placeholder"
@@ -210,7 +218,7 @@ const Mod3 = () => {
                 height: "100%",
               }}
             ></iframe>
-          </div>
+          </div> */}
           <h2>Applications</h2>
           <p>
             &emsp;&emsp;RNA sequencing has a lot of exciting applications that

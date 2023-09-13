@@ -171,7 +171,7 @@ const Home = () => {
             </div>
             <div className="intro-video">
               <iframe
-                src="https://www.youtube.com/embed/MK1yL1_i5g8"
+                src="https://www.youtube.com/embed/Nxko-cJNWY8"
                 title="placeholder"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
@@ -198,62 +198,88 @@ const Home = () => {
         <p>
           <div>
             &emsp;&emsp;Throughout this course, you will embark on a captivating
-            journey into the world of Bioinformatics. You will delve deep into
-            this fascinating field, acquiring essential skills such as analyzing
-            RNA Sequencing data and comprehending genomic variations, among many
-            others.
+            journey into the world of Bioinformatics. You will{" "}
+            <span>
+              delve deep into this fascinating field, acquiring essential skills
+              such as analyzing RNA Sequencing data and comprehending genomic
+              variations
+            </span>
+            , among many others.
           </div>
+          <br></br>
           <div>
             &emsp;&emsp;Bioinformatics, at its core, combines the principles of
             biology, computer science, and statistics to tackle complex
-            biological problems. In this course, you will gain a comprehensive
-            understanding of the fundamental concepts and methodologies used in
-            this interdisciplinary domain.
+            biological problems. In this course, you will gain a{" "}
+            <span>
+              comprehensive understanding of the fundamental concepts and
+              methodologies
+            </span>{" "}
+            used in this interdisciplinary domain.
           </div>
+          <br></br>
           <div>
             {" "}
-            &emsp;&emsp;One of the key areas you will explore is the analysis of
-            RNA Sequencing (RNA-Seq) data. RNA-Seq has revolutionized our
-            ability to study gene expression patterns and uncover valuable
-            insights into cellular processes. By delving into this subject, you
-            will learn how to preprocess and normalize raw RNA-Seq data, perform
-            quality control checks, and identify differentially expressed genes.
-            Through hands-on exercises and practical examples, you will develop
-            the skills necessary to extract meaningful information from
-            large-scale transcriptomic datasets.{" "}
+            &emsp;&emsp;One of the key areas you will explore is{" "}
+            <span>
+              the analysis of RNA Sequencing (RNA-Seq) data. RNA-Seq has
+              revolutionized our ability to study gene expression patterns and
+              uncover valuable insights into cellular processes.
+            </span>{" "}
+            By delving into this subject, you will learn how to preprocess and
+            normalize raw RNA-Seq data, perform quality control checks, and
+            identify differentially expressed genes. Through{" "}
+            <span>
+              hands-on exercises and practical examples, you will develop the
+              skills necessary
+            </span>{" "}
+            to extract meaningful information from large-scale transcriptomic
+            datasets.{" "}
           </div>{" "}
+          <br></br>
           <div>
-            &emsp;&emsp;Additionally, you will delve into the captivating realm
-            of genomic variations. Genomes are inherently diverse, and
-            understanding the genetic differences between individuals and
-            species is crucial for various applications, from medical research
-            to evolutionary studies. Throughout the course, you will explore
-            techniques for identifying and characterizing genomic variations,
-            such as single nucleotide polymorphisms (SNPs), insertions and
-            deletions (indels), and structural variations. You will learn how to
-            analyze genomic data and interpret the implications of these
-            variations in the context of human health and disease.{" "}
+            &emsp;&emsp;Additionally, you will dive into the realm of genomic
+            variations.{" "}
+            <span>
+              Genomes are inherently diverse, and understanding the genetic
+              differences between individuals and species is crucial for various
+              applications, from medical research to evolutionary studies.
+            </span>{" "}
+            Throughout the course, you will explore techniques for identifying
+            and characterizing genomic variations, such as single nucleotide
+            polymorphisms (SNPs), insertions and deletions (indels), and
+            structural variations. You will learn how to analyze genomic data
+            and interpret the implications of these variations in the context of
+            human health and disease.{" "}
           </div>
+          <br></br>
           <div>
             &emsp;&emsp;Moreover, this course will expose you to a multitude of
-            other captivating topics within the field of Bioinformatics. You
-            will explore the principles of sequence alignment, phylogenetics,
-            protein structure prediction, and functional annotation of genes.
-            These skills will equip you with a well-rounded foundation to tackle
-            diverse biological questions and contribute to cutting-edge research
-            in the field.
+            other captivating topics within the field of Bioinformatics.{" "}
+            <span>
+              You will explore the principles of sequence alignment,
+              phylogenetics, protein structure prediction, and functional
+              annotation of genes. These skills will equip you with a
+              well-rounded foundation
+            </span>{" "}
+            to tackle diverse biological questions and contribute to
+            cutting-edge research in the field.
           </div>
+          <br></br>
           <div>
             {" "}
-            Through a combination of lectures, practical exercises, and
-            interactive discussions, this course aims to empower you with the
-            knowledge and tools necessary to navigate the intricate landscape of
-            Bioinformatics. By the end of the course, you will be equipped with
-            a skill set that will enable you to confidently analyze biological
-            data, unravel the mysteries of life encoded in genomes, and make
-            meaningful contributions to the ever-expanding field of
-            Bioinformatics.{" "}
+            Through a combination of{" "}
+            <span>
+              lectures, practical exercises, and interactive discussions,
+            </span>{" "}
+            this course aims to empower you with the knowledge and tools
+            necessary to navigate the intricate landscape of Bioinformatics. By
+            the end of the course, you will be equipped with a skill set that
+            will enable you to confidently analyze biological data, unravel the
+            mysteries of life encoded in genomes, and make meaningful
+            contributions to the ever-expanding field of Bioinformatics.{" "}
           </div>
+          <br></br>
           &emsp;&emsp;Join us on this exhilarating educational journey and
           unlock the boundless possibilities that Bioinformatics has to offer!
         </p>

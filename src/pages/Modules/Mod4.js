@@ -50,7 +50,7 @@ const Mod4 = () => {
                 transform="translate(0.003 0)"
               ></path>
             </svg>
-            Geneomic Variants
+            Genomic Variants
             <div
               className="dropdown"
               style={{ display: `${isClicked ? "block" : "none"}` }}

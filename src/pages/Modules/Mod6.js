@@ -51,7 +51,7 @@ const Mod6 = () => {
                 transform="translate(0.003 0)"
               ></path>
             </svg>
-            Applications of Bioinfromatics
+            Applications of Bioinformatics
             <div
               className="dropdown"
               style={{ display: `${isClicked ? "block" : "none"}` }}
