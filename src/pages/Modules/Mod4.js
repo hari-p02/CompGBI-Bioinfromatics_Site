@@ -354,7 +354,7 @@ const Mod4 = () => {
           <p className="text-image">
             <img
               alt="Variant Calling Steps"
-              src="/images/mod5imgs/fourth.png"
+              src="/images/mod5imgs/Screen_Shot_2023-07-30_at_4.26.33_PM.png"
             />
           </p>
           <h2>Population genetics</h2>
@@ -435,10 +435,10 @@ const Mod4 = () => {
             variants themselves are stored in a special type of file called a
             VCF file.
           </p>
-          <p>
+          <p className="text-image">
             <img
               alt="Screen Shot 2023-07-30 at 4.28.23 PM.png"
-              src="Module%205%204bc0a1939fa84e94aad2f74ac3dbf61f/Screen_Shot_2023-07-30_at_4.28.23_PM.png"
+              src="/images/mod5imgs/Screen_Shot_2023-07-30_at_4.28.23_PM.png"
             />
           </p>
           <p>Some popular variant calling softwares include:</p>
