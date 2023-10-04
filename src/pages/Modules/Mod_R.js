@@ -105,7 +105,7 @@ const ModR = () => {
   return (
     <>
       <div className="mod1">
-        <div className="card-mod1">
+        <div className="card-mod2">
           <div className="circles">
             <div className="c"></div>
             <div className="c"></div>
