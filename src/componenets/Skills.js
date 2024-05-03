@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/componenet_styles/Skills.css";
 import mod2 from "../images/mod2.png";
+import R from "../images/R.png";
 import mod3 from "../images/mod3.png";
 import mod4 from "../images/mod4.png";
 import mod5 from "../images/mod5.png";
@@ -18,6 +19,13 @@ const Skills = () => {
           <div className="description">
             <h3>Coding in Python</h3>
             <p>Dont worry if you do not know any Python!</p>
+          </div>
+        </div>
+        <div className="card-container">
+          <img src={R} alt="" />
+          <div className="description">
+            <h3>R Programming</h3>
+            <p>R is a fun language!</p>
           </div>
         </div>
         <div className="card-container">
